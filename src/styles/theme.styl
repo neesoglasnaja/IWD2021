@@ -1,0 +1,220 @@
+main-color = #6d000b
+highlight-color = #6d000b
+important-color = #a11212
+back-color = #1b1b1b
+
+@font-face {
+  font-family: 'Amatic SC';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Amatic SC Bold'), local('AmaticSC-Bold'), url(./fonts/AmaticSC-Bold-Cyrillic.woff2) format('woff2');
+  unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+
+@font-face {
+  font-family: 'Amatic SC';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Amatic SC Regular'), local('AmaticSC-Regular'), url(./fonts/AmaticSC-Bold.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+.shower.full .slide .shout.grow
+.shower.full .slide .shout.shrink
+	transition: none !important;
+
+.shower.full
+	background-color: #111
+
+.shower.list .slide.active
+	box-shadow: 0 0 0 1px highlight-color, 0 0 0 20px highlight-color, 0 20px 50px rgba(0, 0, 0, .3);
+
+.slide::after
+	color back-color
+	background none
+	height 75px
+	right 20px
+.slide::before
+	position absolute
+	top: 75px;
+	right: 100px;
+	height 50px
+.slide
+	padding-top 60px
+	padding-left 60px
+	padding-right 60px
+
+	&.no-top
+		padding-top: 0
+
+	&.center
+		text-align: center
+
+	&.red
+		background-color: back-color
+		h2
+			color: #fff
+
+	h2
+		color: back-color
+		font-family: 'Amatic SC', sans-serif;
+
+		&.square
+			color: #ffffff
+			font-family: 'Amatic SC', sans-serif;
+			margin-top: -30px
+			text-align: center;
+			position: relative;
+			top: 50%
+			transform: translateY(-50%);
+			font-size: 5em;
+			&::before
+				content: ''
+				display: block;
+				background-color: #2d2d2d
+				width: 550px
+				height 400px
+				position: absolute
+				top: calc(50% - 200px)
+				left: calc(50% - 275px)
+				z-index: -10;
+				border: 5px solid #fff;
+				opacity: 0.25
+
+	&.captain
+		h2
+			margin: 0;
+			margin-top: -100px;
+			width: 100%;
+			padding: 30px 0;
+			border-radius: 0;
+			position relative
+			font-size: 60px;
+			height: 180px;
+			align-items: center;
+			justify-content: center;
+			display: flex;
+			background-color: back-color;
+			color: #fff;
+			&::after
+				content: ''
+				background-color: back-color
+				width: 50px;
+				height: 50px;
+				display: block;
+				position: absolute
+				bottom: -25px;
+				transform: rotate(-10deg) skewY(50deg)
+				right: 125px;
+				z-index -1
+	.captain-text
+		position: absolute;
+		bottom: 15%;
+		text-align: center;
+		width: 100%;
+		left: 0;
+		font-family: 'Amatic SC', sans-serif;
+		font-size: 2em;
+
+	.subtitle
+        font-family: 'Amatic SC', sans-serif;
+        background-color: #ddd
+        width: auto
+        display: inline-block;
+        font-size: 50px !important
+        padding: 5px 20px;
+        line-height: 60px;
+
+
+
+
+
+
+.hightlight
+.important
+.alert
+	border-radius 0.2em
+	padding 0.1em 0.3em
+.hightlight
+	background #fafaa2
+.hightlight *
+	color #000 !important
+.important
+	background important-color
+	color #fff
+.important *
+	color #fff !important
+.alert
+	background #D10A0A
+	color #fff
+.alert *
+	color #fff !important
+.comment
+	color #999999
+	
+.progress
+	border-color highlight-color rgba(0, 0, 0, 0) highlight-color highlight-color
+	
+
+.tag
+	color #AD1531
+.attr
+	color #4F7302
+
+.slide
+	p.center
+		text-align center
+		img
+			max-width 100%
+
+	p.quote
+		text-align center
+		font-style italic
+
+	&.no-page
+		&::after
+			visibility: hidden;
+
+	.copyright
+		position: absolute
+		right 10px
+		bottom 20px
+		transform: translateX(100%) rotate(-90deg)
+		transform-origin: 0 100%;
+		font-size: 12px
+		color: highlight-color
+
+		&.white
+			color: #fff
+
+		
+	
+blockquote
+	font-size 35px	
+	line-height 1.4
+	
+figcaption
+	opacity 0.5
+	position: relative
+	line-height: 1.6
+	margin-top: 40px !important
+
+
+.slide ul>li:lang(ru)::before
+    color: #cd0011
+    content: '\2713';
+
+.slide li>ul>li
+    color: #444;
+    line-height: 30px;
+    font-size: 20px;
+
+.strike
+    text-decoration: line-through
+
+.anti-mudak
+	color: #888;
+	position: absolute;
+	top: 80px
+	left: 60px
+	font-size: 0.75em;

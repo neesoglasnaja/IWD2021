@@ -1,0 +1,46 @@
+include ./blocks/slide.jade
+include ./blocks/cover.jade
+include ./blocks/quote.jade
+include ./blocks/frame.jade
+
+- var title = "Тебе не нужен Bootstrap! Или нужен? Или все же не нужен?"
+
+doctype html
+html(lang='ru')
+  head
+    title !{title}
+    meta(charset='utf-8')
+    meta(http-equiv='x-ua-compatible', content='ie=edge')
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+    link(rel='stylesheet', href='shower/themes/ribbon/styles/screen-16x9.css')
+    link(rel='stylesheet', href='theme.css')
+    link(rel='stylesheet', href='slides.css')
+  body.shower.list
+    header.caption
+      h1 !{title}
+    +slide({name: 'cover', classes:'cover'})
+      +cover('pictures/cover.jpg')
+    +slide({header: "", classes: ""})
+      div(style="margin-left: 50%; width: 60%; margin-top: 100px")
+        ul
+          li Верстала еще на таблицах
+          li Была начальником отдела фронтенда
+          li Выгорела
+          li Уволилась
+          li.next Счастливая безработная
+        p(style="margin-top: 40px")
+          img.logo(src="pictures/minskcss.png")
+          img.logo(src="pictures/minskjs.png")
+          img.logo(src="pictures/css-minsk-js.svg", style="background-color: #2b2727; height: 75px")
+      +cover('pictures/about-cover.jpg')
+    +slide({name: 'theend', header: "", classes: ''})
+      p.end-link(style="position: absolute; bottom: 5%; background-color: #1b1b1b")
+        a.bigger(href="http://bit.ly/" target="_blank") bit.ly/
+        br
+        | Александра Шинкевич (
+        a(href='https://twitter.com/neesoglasnaja' target="_blank") @neesoglasnaja
+        | )
+      img.cover(src='pictures/end.jpg')
+
+    .progress
+    script(src='shower/shower.min.js')
