@@ -33,6 +33,45 @@ html(lang='ru')
           img.logo(src="pictures/minskjs.png")
           img.logo(src="pictures/css-minsk-js.svg", style="background-color: #2b2727; height: 75px")
       +cover('pictures/about-cover.jpg')
+    +slide({header: "Что такое Bootstrap", classes: ""})
+      p Библиотека компонентов для унификации интерфейса
+    +slide({header: "Почему появился?", classes: ""})
+      p Чтобы унифицировать интерфейс одной отдельно взятой компании
+    +slide({header: "Почему стал популярным", classes: ""})
+      p просто, быстро и удобно копипастить
+      p большой набор базовых, рутинных компонентов
+      p Выглядит презентабельно из коробки
+      p это HTML, CSS и JS (jQuery)
+    +slide({header: "Версии для JS фреймворков", classes: ""})
+      p React Bootstrap (https://react-bootstrap.github.io)
+      p ng-bootstrap (https://ng-bootstrap.github.io)
+      p BootstrapVue (https://bootstrap-vue.js.org/)
+      p Но это полностью переписанные под фреймворки библиотеки компонентов!
+    +slide({header: "Что в нем хорошо", classes: ""})
+      p расширенная кроссбраузерность
+      p семантика и a11y
+      p типографика
+      p Grid system -> кто верстал флоутами, тот поймет
+      p респонсив из коробки
+    +slide({header: "Что в нем плохо", classes: ""})
+      p Перебивать стили поверх и глобальная область видимости
+      p неправильная кастомизация -> ненужные зависимости
+      p классы-модификаторы / утилитарные классы
+      p jquery
+    +slide({header: "Чего нет вообще", classes: ""})
+      p бэм
+      p препроцессоры vs PostCSS
+      p custom properties
+      p mobile first
+      p css grid
+      p responsive images
+      p dialog
+    +slide({header: "Подводя итог", classes: ""})
+      ul
+        li Не ненавидьте библиотеки "потому что модно"
+        li Пользуйтесь инструментами осознанно
+        li Знайте возможности современных CSS, HTML и JS
+        li Не переставайте учиться
     +slide({name: 'theend', header: "", classes: ''})
       p.end-link(style="position: absolute; bottom: 5%; background-color: #1b1b1b")
         a.bigger(href="http://bit.ly/" target="_blank") bit.ly/
