@@ -20,9 +20,8 @@
         <ul>
           <li>Верстала еще на таблицах</li>
           <li>Была начальником отдела фронтенда</li>
-          <li>Выгорела</li>
-          <li>Уволилась</li>
-          <li class="next">Счастливая безработная</li>
+          <li>Выгорела и уволилась</li>
+          <li style="text-decoration: line-through">Счастливая безработная</li>
         </ul>
         <p style="margin-top: 40px"><img src="pictures/minskcss.png" class="logo"><img src="pictures/minskjs.png" class="logo"><img src="pictures/css-minsk-js.svg" style="background-color: #2b2727; height: 75px" class="logo"></p>
       </div><img src="pictures/about-cover.jpg" class="cover"/>
@@ -148,18 +147,21 @@
       <p>В планах ее убрать, но пока так https://blog.getbootstrap.com/2019/02/11/bootstrap-4-3-0/</p>
     </section>
     <section id="" class="slide">
-      <h2>Чего нет вообще</h2>
-      <p>бэм</p>
-      <p>препроцессоры vs PostCSS</p>
-      <p>custom properties</p>
-      <p>css grid</p>
-      <p>responsive images</p>
-      <p>dialog</p>
+      <h2>Делаем свой Oopstrap</h2>
     </section>
     <section id="" class="slide">
-      <h2>БЭМ</h2>
-      <p>БЭМ победил https://2019.stateofcss.com/technologies/methodologies/#tools-section-overview</p>
-      <p>Если не БЭМ, то что-то другое. Но структурно понятное и логичное</p>
+      <h2>Спойлер</h2>
+      <p>Плохой дизайн сложно превратить в хороший CSS фреймворк</p>
+    </section>
+    <section id="" class="slide">
+      <h2>Без хорошего UI Kit...</h2><img src="https://neesoglasnaja.github.io/moscowcss_11/pictures/ui-kit.jpg" width="100%">
+    </section>
+    <section id="" class="slide">
+      <h2>...все будет ОЧЕНЬ ПЛОХО</h2><img src="https://neesoglasnaja.github.io/moscowcss_11/pictures/bad-code-2.jpg" width="100%">
+    </section>
+    <section id="" class="slide">
+      <h2>Технологии</h2>
+      <p>HTML + CSS (PostCSS)</p>
     </section>
     <section id="" class="slide">
       <h2>Препроцессоры vs PostCSS</h2>
@@ -168,14 +170,68 @@
       <p>Чем PostCSS лучше препроцессора? Нативностью и собственным выбором плагинов</p>
     </section>
     <section id="" class="slide">
+      <h2>Из чего состоит Oopstrap</h2>
+      <ul>
+        <li>Документация</li>
+        <li>layouts & grid</li>
+        <li>Типографика и контент</li>
+        <li>Компоненты</li>
+        <li>Утилитарные классы</li>
+      </ul>
+    </section>
+    <section id="" class="slide">
+      <h2>Документация</h2>
+      <p>davidhund/styleguide-generators</p>
+    </section>
+    <section id="" class="slide">
+      <p>https://github.com/morishitter/postcss-style-guide</p>
+    </section>
+    <section id="" class="slide"><img src="https://github.com/morishitter/postcss-style-guide/raw/master/style-guide-default.png">
+    </section>
+    <section id="" class="slide">
+      <h2>Устанавливаем границы</h2>
+    </section>
+    <section id="" class="slide">
+      <h2>Stylelint</h2>
+      <p>Ссылка на мой доклад</p>
+    </section>
+    <section id="" class="slide">
       <h2>custom properties</h2>
       <p>Более мощный инструмент, чем  переменные препроцессоров</p>р Имеет каскадность и фоллбек
       <p>Классный кейс - адаптивные элементы UI kit</p>
     </section>
     <section id="" class="slide">
+      <h2>Запрет на анархию в переменных</h2>
+      <p>"It's allowed to use only \"var(--var)\" for different color (--color-NAME); font (--font-family-NAME, --font-size-NAME); line height (--line-height-NAME); border radius (--border-radius-NAME); and shadows (--shadow-NAME) props. You CAN use 'inherit' for colors, font-size, font-family and line-height. You CAN use 'none' for border-radius and shadows"</p>
+    </section>
+    <section id="" class="slide"><img src="https://neesoglasnaja.github.io/moscowcss_11/pictures/good-code.jpg" width="100%">
+    </section>
+    <section id="" class="slide">
+      <p>И нет, переменные это не про то, чтобы не копипастить код</p>
+      <p>Основная задача переменных - контроль над стилями "темы"</p>
+    </section>
+    <section id="" class="slide">
+      <h2>layouts & grid</h2>
+    </section>
+    <section id="" class="slide">
+      <h2>Эра flex</h2>
+      <p>Высчитывать все эти колонки, остпуты... Долго и неинтересно!</p>
+    </section>
+    <section id="" class="slide">
       <h2>css grid</h2>
       <p>Создание сетки в несколько строк</p>р Подержка браузеров позволяет использовать в проде https://caniuse.com/#feat=css-grid
-      <p>Макетные сетки во всех вариациях (подумать над демкой вертикального ритма)</p>
+    </section>
+    <section id="" class="slide">
+      <h2>css grid</h2>
+      <p>Пример с 12 колонками в несколько строк</p>
+      <p>Вот и не нужен подход с atomicCSS, когда стили пишутся классами в разметке</p>
+      <p>А еще гриды умеют в адаптив (пример как)</p>
+    </section>
+    <section id="" class="slide">
+      <h2>Типографика и контент</h2>
+      <p>Воруй как художник, если дизайнер это еще не сделал за тебя</p>
+      <p>Тулзы для подбора типографики</p>
+      <p>Можно и вертикальный ритм подключить, это не сложно</p>
     </section>
     <section id="" class="slide">
       <h2>responsive images</h2>
@@ -183,8 +239,43 @@
       <p>Но ничего не говорится от src-set, т.е. об адаптивных изображениях</p>р А это классная техника уменьшения трафика пользователя
     </section>
     <section id="" class="slide">
+      <h2>Компоненты</h2>
+      <p>Неужто сложно наверстать такие компоненты как...</p>
+      <p>Alerts, Badges, Buttons, Progress, Spinners и еще несколько десятков такой же ерунды?</p>
+    </section>
+    <section id="" class="slide">
+      <h2>А что про JS компоненты?</h2>
+      <p>Камон, ну что мало ли каруселек без jQuery, с a11y?</p>
+      <p>В редких проектах нужнен весь список доступных JS компонентов Bootstrap</p>
+      <p>А если и так, то они часто выглядят отнюдь не так, как в популярном фреймворке</p>
+    </section>
+    <section id="" class="slide">
       <h2>dialog</h2>р Полноценные модальный элемент
       <p>Пока сложно использовать из-за низкой поддержки https://caniuse.com/#feat=dialog</p>р Доклад Ани Селезневой https://www.youtube.com/watch?v=s6PI8pKQxgo
+    </section>
+    <section id="" class="slide">
+      <h2>Утилитарные класы</h2>
+      <p>Ресеты стилей</p>
+      <p>Простой повторяющийся код вынесен в переменные еще несколько этапов назад</p>
+      <p>Большинству проектов достаточно парочки таких классов как visibility-hidden, display-none и т.д.</p>
+      <p>А остальное - в утиль. Вот серьезно, зачему 20 классов border, если граница задается один свойством?! </p>
+    </section>
+    <section id="" class="slide">
+      <h2>Вуаля!</h2>
+      <p>CSS библиотека, заточенная под конкретный проект</p>
+      <p>Со встроенной документацией</p>
+      <p>С конкретными примерами компонентов конкретного проекта</p>
+      <p>И это не исключает использования сторонних библиотек</p>
+    </section>
+    <section id="" class="slide">
+      <h2>Когда брать чужое?</h2>
+      <ul>
+        <li>Разрабатывается быстрый прототип</li>
+        <li>Дизайн "заточен" под выбранную UI библиотеку</li>
+        <li>Нет дизайна</li>
+        <li>Вы не умеете верстать</li>
+        <li>Просто лень</li>
+      </ul>
     </section>
     <section id="" class="slide">
       <h2>Подводя итог</h2>

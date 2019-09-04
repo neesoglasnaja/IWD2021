@@ -25,9 +25,8 @@ html(lang='ru')
         ul
           li Верстала еще на таблицах
           li Была начальником отдела фронтенда
-          li Выгорела
-          li Уволилась
-          li.next Счастливая безработная
+          li Выгорела и уволилась
+          li(style="text-decoration: line-through") Счастливая безработная
         p(style="margin-top: 40px")
           img.logo(src="pictures/minskcss.png")
           img.logo(src="pictures/minskjs.png")
@@ -114,37 +113,93 @@ html(lang='ru')
     +slide({header: "Зависимость от jQuery", classes: ""})
       p Понять, простить и ждать
       p В планах ее убрать, но пока так https://blog.getbootstrap.com/2019/02/11/bootstrap-4-3-0/
-    +slide({header: "Чего нет вообще", classes: ""})
-      p бэм
-      p препроцессоры vs PostCSS
-      p custom properties
-      p css grid
-      p responsive images
-      p dialog
-    +slide({header: "БЭМ", classes: ""})
-      p БЭМ победил https://2019.stateofcss.com/technologies/methodologies/#tools-section-overview
-      p Если не БЭМ, то что-то другое. Но структурно понятное и логичное
+    +slide({header: "Делаем свой Oopstrap", classes: ""})
+    +slide({header: "Спойлер", classes: ""})
+      p Плохой дизайн сложно превратить в хороший CSS фреймворк
+    +slide({header: "Без хорошего UI Kit...", classes: ""})
+      img(src="https://neesoglasnaja.github.io/moscowcss_11/pictures/ui-kit.jpg", width="100%")
+    +slide({header: "...все будет ОЧЕНЬ ПЛОХО", classes: ""})
+      img(src="https://neesoglasnaja.github.io/moscowcss_11/pictures/bad-code-2.jpg", width="100%")
+    +slide({header: "Технологии", classes: ""})
+      p HTML + CSS (PostCSS)
     +slide({header: "Препроцессоры vs PostCSS", classes: ""})
       p В 2019 можно и без препроцессоров
       p Пруф от 2018 года - http://frontendconf.ru/moscow-rit/2018/abstracts/3326
       р В большом проекте полностью сменить технологию не так-то и просто
       p Чем PostCSS лучше препроцессора? Нативностью и собственным выбором плагинов
+    +slide({header: "Из чего состоит Oopstrap", classes: ""})
+      ul
+        li Документация
+        li layouts & grid
+        li Типографика и контент
+        li Компоненты
+        li Утилитарные классы
+    +slide({header: "Документация", classes: ""})
+      p davidhund/styleguide-generators
+    +slide({header: "", classes: ""})
+      p https://github.com/morishitter/postcss-style-guide
+    +slide({header: "", classes: ""})
+      img(src="https://github.com/morishitter/postcss-style-guide/raw/master/style-guide-default.png")
+    +slide({header: "Устанавливаем границы", classes: ""})
+    +slide({header: "Stylelint", classes: ""})
+      p Ссылка на мой доклад
     +slide({header: "custom properties", classes: ""})
       p Более мощный инструмент, чем  переменные препроцессоров
       р Имеет каскадность и фоллбек
       p Классный кейс - адаптивные элементы UI kit
+    +slide({header: "Запрет на анархию в переменных", classes: ""})
+      p "It's allowed to use only \"var(--var)\" for different color (--color-NAME); font (--font-family-NAME, --font-size-NAME); line height (--line-height-NAME); border radius (--border-radius-NAME); and shadows (--shadow-NAME) props. You CAN use 'inherit' for colors, font-size, font-family and line-height. You CAN use 'none' for border-radius and shadows"
+    +slide({header: "", classes: ""})
+      img(src="https://neesoglasnaja.github.io/moscowcss_11/pictures/good-code.jpg", width="100%")
+    +slide({header: "", classes: ""})
+      p И нет, переменные это не про то, чтобы не копипастить код
+      p Основная задача переменных - контроль над стилями "темы"
+    +slide({header: "layouts & grid", classes: ""})
+    +slide({header: "Эра flex", classes: ""})
+      p Высчитывать все эти колонки, остпуты... Долго и неинтересно!
     +slide({header: "css grid", classes: ""})
       p Создание сетки в несколько строк
       р Подержка браузеров позволяет использовать в проде https://caniuse.com/#feat=css-grid
-      p Макетные сетки во всех вариациях (подумать над демкой вертикального ритма)
+    +slide({header: "css grid", classes: ""})
+      p Пример с 12 колонками в несколько строк
+      p Вот и не нужен подход с atomicCSS, когда стили пишутся классами в разметке
+      p А еще гриды умеют в адаптив (пример как)
+    +slide({header: "Типографика и контент", classes: ""})
+      p Воруй как художник, если дизайнер это еще не сделал за тебя
+      p Тулзы для подбора типографики
+      p Можно и вертикальный ритм подключить, это не сложно
     +slide({header: "responsive images", classes: ""})
       p В Bootstrap есть поддержка тега picture - это круто
       p Но ничего не говорится от src-set, т.е. об адаптивных изображениях
       р А это классная техника уменьшения трафика пользователя
+    +slide({header: "Компоненты", classes: ""})
+      p Неужто сложно наверстать такие компоненты как...
+      p Alerts, Badges, Buttons, Progress, Spinners и еще несколько десятков такой же ерунды?
+    +slide({header: "А что про JS компоненты?", classes: ""})
+      p Камон, ну что мало ли каруселек без jQuery, с a11y?
+      p В редких проектах нужнен весь список доступных JS компонентов Bootstrap
+      p А если и так, то они часто выглядят отнюдь не так, как в популярном фреймворке
     +slide({header: "dialog", classes: ""})
       р Полноценные модальный элемент
       p Пока сложно использовать из-за низкой поддержки https://caniuse.com/#feat=dialog
       р Доклад Ани Селезневой https://www.youtube.com/watch?v=s6PI8pKQxgo
+    +slide({header: "Утилитарные класы", classes: ""})
+      p Ресеты стилей
+      p Простой повторяющийся код вынесен в переменные еще несколько этапов назад
+      p Большинству проектов достаточно парочки таких классов как visibility-hidden, display-none и т.д.
+      p А остальное - в утиль. Вот серьезно, зачему 20 классов border, если граница задается один свойством?! 
+    +slide({header: "Вуаля!", classes: ""})
+      p CSS библиотека, заточенная под конкретный проект
+      p Со встроенной документацией
+      p С конкретными примерами компонентов конкретного проекта
+      p И это не исключает использования сторонних библиотек
+    +slide({header: "Когда брать чужое?", classes: ""})
+      ul
+        li Разрабатывается быстрый прототип
+        li Дизайн "заточен" под выбранную UI библиотеку
+        li Нет дизайна
+        li Вы не умеете верстать
+        li Просто лень
     +slide({header: "Подводя итог", classes: ""})
       ul
         li Не ненавидьте библиотеки "потому что модно"
