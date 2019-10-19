@@ -13,81 +13,193 @@ html(lang='ru')
     meta(http-equiv='x-ua-compatible', content='ie=edge')
     meta(name='viewport', content='width=device-width, initial-scale=1')
     link(rel='stylesheet', href='shower/themes/ribbon/styles/screen-16x9.css')
+    link(rel="stylesheet" href="vendor/highlight.github.css")
     link(rel='stylesheet', href='theme.css')
     link(rel='stylesheet', href='slides.css')
   body.shower.list
     header.caption
       h1 !{title}
     +slide({name: 'cover', classes:'cover'})
+      h2.label(style="margin-top: 50px;") Тебе не нужен Bootstrap!
+      p(style="font-size: 2em") Или нужен? Или все же не нужен?
+      p(style="opacity: 0.8; margin-top: 155px") Александра Шинкевич
+        br
+        a(href='https://twitter.com/neesoglasnaja' target="_blank") @neesoglasnaja
       +cover('pictures/cover.jpg')
     +slide({header: "", classes: ""})
-      div(style="margin-left: 50%; width: 60%; margin-top: 100px")
+      div(style="margin-left: 50%; width: 60%; margin-top: 0px")
+        h2.label Кто я?
         ul
           li Верстала еще на таблицах
           li Была начальником отдела фронтенда
           li Выгорела и уволилась
-          li(style="text-decoration: line-through") Счастливая безработная
-        p(style="margin-top: 40px")
+          li Счастливая безработная
+        ul.next.no-style(style="position: absolute; background-color: white; top: 164px;")
+          li.empty Верстала еще на таблицах
+          li.empty Была начальником отдела фронтенда
+          li.empty Выгорела и уволилась
+          li.empty(style="text-decoration: line-through") Счастливая безработная
+          li Lead Frontend Developer в Expert Soft
+        p(style="margin-top: 100px")
           img.logo(src="pictures/minskcss.png")
           img.logo(src="pictures/minskjs.png")
           img.logo(src="pictures/css-minsk-js.svg", style="background-color: #2b2727; height: 75px")
-      +cover('pictures/about-cover.jpg')
-    +slide({header: "О чем расскажу", classes: ""})
+      +cover('pictures/me.jpg')
+    +slide({header: "", classes: ""})
+      h2.label О чем расскажу
       ul
-        li Что такое Bootstrap, зачем появился и почему стал популярным
-        li Плюсы и минусы UI библиотек на примере Bootstrap
-        li Как сделать свой Bootstrap для проекта с компонентным подходом
-    +slide({header: "Что такое Bootstrap", classes: ""})
-      p Библиотека компонентов для унификации интерфейса
-    +slide({header: "Зачем появился?", classes: ""})
+        li Что такое Bootstrap
+        li Плюсы и минусы UI библиотек
+        li Как сделать свой Bootstrap
+    +slide({header: "", classes: ""})
+      +cover('pictures/bootstrap.jpg')
+    +slide({header: "", classes: ""})
+      h2.label Bootstrap - это...
+      ul
+        li Библиотека компонентов
+        li CSS фреймворк
+        li UI библиотека
+    +slide({header: "", classes: ""})
+      h2.label Зачем появился?
       p Чтобы унифицировать интерфейс одной отдельно взятой компании
       p Уход из твиттера - https://blog.getbootstrap.com/2012/09/29/onward/
-    +slide({header: "Почему стал популярным", classes: ""})
-      p просто, быстро и удобно копипастить
-      p большой набор базовых, рутинных компонентов
-      p Выглядит презентабельно из коробки
-      p Это HTML, CSS и JS (jQuery)
-    +slide({header: "Мой первый сайт на Bootstrap 2", classes: ""})
-      p http://3d.miu.by/
-      p Изначально был сделан "чистым", но была боль с кроссбраузерностью
-      p 2013 год: поддержка ie6 как основного браузера
-    +slide({header: "Версии для JS фреймворков", classes: ""})
-      p React Bootstrap (https://react-bootstrap.github.io)
-      p ng-bootstrap (https://ng-bootstrap.github.io)
-      p BootstrapVue (https://bootstrap-vue.js.org/)
-      p Но это полностью переписанные под фреймворки библиотеки компонентов!
-    +slide({header: "Что в нем хорошо", classes: ""})
-      p типографика
-      p семантика и a11y
-      p Grid system -> кто верстал флоутами, тот поймет
-      p респонсив из коробки
-      p расширенная кроссбраузерность
-    +slide({header: "Типографика", classes: ""})
-      p Простой кит по заголовкам и тексту
-      p Аналогичные инструменты
+    +slide({header: "", classes: ""})
+      h2.label Почему Bootstrap популярен
       ul
-        li Есть почти во всех аналогах
-        li https://devinhunt.github.io/typebase.css/
-        li https://matejlatin.github.io/Gutenberg/
-        li http://typeplate.com/
-      p Как применить на своем проекте? Сделать UI kit со стилями типографики, и использовать только их
-    +slide({header: "Семантика и a11y", classes: ""})
-      p Не говорит использовать section или article
-      p Но и не запрещает, так как стили на классах
-      p Базовые требования a11y  соотвествует, есть aria и role
-      p Почему круто? Потому что благодаря копипасте не делаете совсем плохо
-    +slide({header: "Grid system", classes: ""})
-      p Макетные сетки -> визуальный порядок
-      p https://www.surgebook.com/egorkomarov/book/osnovi_web_dizaina/setka-grid-system https://habr.com/ru/post/464115/
-      p Вертикальный ритм - о нем мало кто вообще знает
-      p Но это все про дизайн. С чего начать? Рассказать дизайнерам о такой штуке. Возможно, им понравится
-    +slide({header: "респонсив из коробки + mobile first", classes: ""})
-      p Как определить, mobile или desktop first? По медиа выражениям
-      p min-width/min-height -> mobile
-      p max-width/max-height -> desktop
-      p почему подход крутой в 2019 году? Потому что http2 позволяет загружать небольшие бандлы эффективно
-    +slide({header: "расширенная кроссбраузерность", classes: ""})
-      p Почему круто? Когда другие годами правили баги кроссбраузерность, то можно и заглянуть в реализацию похожих компонентов
+        li Просто, быстро и удобно копипастить
+        li.next Большой набор базовых компонентов
+        li.next Выглядит презентабельно из коробки
+        li.next Только HTML, CSS и JS (jQuery)
+    +slide({header: "", classes: ""})
+      h2.label Мой первый сайт на Bootstrap 2
+      h2.label.next 2013
+      a.copyright(href="http://3d.miu.by/") http://3d.miu.by/
+      +cover('pictures/miu.jpg')
+    +slide({header: "", classes: ""})
+      h2.label Версии для JS фреймворков
+      ul
+        li
+          a.github(href="https://react-bootstrap.github.io") React Bootstrap
+        li
+          a(href="https://ng-bootstrap.github.io") ng-bootstrap
+        li
+          a(href="https://bootstrap-vue.js.org/") BootstrapVue
+      p.next Эти библиотеки полностью переписаны под фреймворки!
+    +slide({header: "", classes: ""})
+      h2.label Что в нем хорошо
+      ul
+        li Типографика
+        li Cемантика и a11y
+        li Grid system
+        li Responsive Web Design и Mobile First
+        li Расширенная кроссбраузерность
+    +slide({header: "", classes: ""})
+      h2.shout.label Типографика
+    +slide({header: "", classes: ""})
+      h2.label Типографика
+      p Простой кит по заголовкам и тексту
+      ul
+        li.next
+          a(href="https://devinhunt.github.io/typebase.css/") typebase.css
+        li.next
+          a(href="https://matejlatin.github.io/Gutenberg/") Gutenberg
+        li.next
+          a(href="http://typeplate.com/") Typeplate
+      +cover('pictures/typo1.jpg')
+    +slide({header: "", classes: ""})
+      h2.label Как применить?
+      ul
+        li Сделать UI Kit со стилями типографики
+          +cover('pictures/typo2.jpg')
+        li.next Типографика - основа стиля сайта
+          +cover('pictures/typo3.jpg')
+    +slide({header: "", classes: "no-page"})
+      +cover('pictures/typo-example1.jpg')
+      span.next
+        +cover('pictures/typo-example2.jpg')
+      span.next
+        +cover('pictures/typo-example3.jpg')
+    +slide({header: "", classes: ""})
+      h2.shout.label Семантика и&nbsp;a11y
+    +slide({header: "", classes: ""})
+      h2.label Семантика
+      ul
+        li Не говорит использовать section или article
+        li.next Но и не запрещает, так как стили на классах
+      span.next
+        +cover('pictures/semantic-hell.jpg')
+    +slide({header: "", classes: ""})
+      h2.label a11y
+      ul
+        li Базовые требования a11y
+        li Присутствуют aria и role
+      +cover('pictures/a11y.jpg')
+    +slide({header: "", classes: ""})
+      h2.label Как применить?
+      ul
+        li Задумываться о семантике и a11y
+        li.next Верстать семантично
+        li.next Проверять базовое a11y
+    +slide({header: "", classes: "shout"})
+      h2.label.shout Grid system
+    +slide({header: "", classes: "no-page"})
+      +cover('pictures/grids-yes.jpg')
+    +slide({header: "", classes: ""})
+      h2.label Grid system
+      p Модульные сетки = визуальный порядок
+      ul
+        li.empty
+          a(href="https://www.surgebook.com/egorkomarov/book/osnovi_web_dizaina/setka-grid-system") Сетка (Grid System), Егор Комаров
+      +cover('pictures/grids1.jpg')
+    +slide({header: "", classes: ""})
+      +cover('pictures/grids.jpg')
+    +slide({header: "", classes: ""})
+      h2.label Как применить?
+      ul
+        li Рассказать дизайнеру о сетках
+        li Начать использовать CSS Grid Layout
+      ul
+        li.empty.next
+          a(href="https://codepen.io/lautsevich/pen/PRmPxv") CSS Grid Framework by Павел Ловцевич
+    +slide({header: "", classes: ""})
+      h2.shout.label RWD и MF
+      p(style="margin-top: 320px; text-align: center") *Responsive Web Design и Mobile First
+      span.next
+        +cover('pictures/captain.jpg')
+    +slide({header: "", classes: ""})
+      h2.label Mobile First и Desktop First
+      pre
+        code.css
+          | // Mobile First
+          | @media (min-width: ...) { ... }
+          | @media (min-height: ...) { ... }
+      pre.next
+        code.css
+          | // Desktop First
+          | @media (max-width: ...) { ... }
+          | @media (max-height: ...) { ... }
+    +slide({header: "", classes: ""})
+      h2.label Как применить?
+      ul
+        li Начни делать Mobile First!
+        li Мобильные - это важно!
+        li Я серьезно, и дизанейру своем скажи!
+    +slide({header: "", classes: ""})
+      h2.shout.label Кроссбраузерность
+    +slide({header: "", classes: ""})
+      h2.label Кроссбраузерность
+      ul
+        li Браузер - неконтролируемая среда
+        li Чем сложнее код, тем больше ошибок
+        +cover('pictures/browsers.jpg')
+    +slide({header: "", classes: ""})
+      h2.label Как применить?
+      ul
+        li Начни тестировать свой код кроссбраузерно
+        li Да, на реальных девайсах
+        li Загляни в исходники Bootstrap за вдохновением
+      p
+        a(href="https://neesoglasnaja.github.io/moscowcss_11/") Тестирование фронтенда для разработчиков
     +slide({header: "Что в нем плохо", classes: ""})
       p Проблемы большого опенсорса
       p Сложность кастомизации
@@ -219,3 +331,6 @@ html(lang='ru')
 
     .progress
     script(src='shower/shower.min.js')
+    script(src='vendor/highlight.pack.js')
+    script.
+      hljs.initHighlightingOnLoad();

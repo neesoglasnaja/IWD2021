@@ -6,6 +6,7 @@
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="shower/themes/ribbon/styles/screen-16x9.css">
+    <link rel="stylesheet" href="vendor/highlight.github.css">
     <link rel="stylesheet" href="theme.css">
     <link rel="stylesheet" href="slides.css">
   </head>
@@ -13,100 +14,196 @@
     <header class="caption">
       <h1>Тебе не нужен Bootstrap! Или нужен? Или все же не нужен?</h1>
     </header>
-    <section id="cover" class="slide  cover"><img src="pictures/cover.jpg" class="cover"/>
+    <section id="cover" class="slide  cover">
+      <h2 style="margin-top: 50px;" class="label">Тебе не нужен Bootstrap!</h2>
+      <p style="font-size: 2em">Или нужен? Или все же не нужен?</p>
+      <p style="opacity: 0.8; margin-top: 155px">Александра Шинкевич<br><a href="https://twitter.com/neesoglasnaja" target="_blank">@neesoglasnaja</a></p><img src="pictures/cover.jpg" class="cover"/>
     </section>
     <section id="" class="slide">
-      <div style="margin-left: 50%; width: 60%; margin-top: 100px">
+      <div style="margin-left: 50%; width: 60%; margin-top: 0px">
+        <h2 class="label">Кто я?</h2>
         <ul>
           <li>Верстала еще на таблицах</li>
           <li>Была начальником отдела фронтенда</li>
           <li>Выгорела и уволилась</li>
-          <li style="text-decoration: line-through">Счастливая безработная</li>
+          <li>Счастливая безработная</li>
         </ul>
-        <p style="margin-top: 40px"><img src="pictures/minskcss.png" class="logo"><img src="pictures/minskjs.png" class="logo"><img src="pictures/css-minsk-js.svg" style="background-color: #2b2727; height: 75px" class="logo"></p>
-      </div><img src="pictures/about-cover.jpg" class="cover"/>
+        <ul style="position: absolute; background-color: white; top: 164px;" class="next no-style">
+          <li class="empty">Верстала еще на таблицах</li>
+          <li class="empty">Была начальником отдела фронтенда</li>
+          <li class="empty">Выгорела и уволилась</li>
+          <li style="text-decoration: line-through" class="empty">Счастливая безработная</li>
+          <li>Lead Frontend Developer в Expert Soft</li>
+        </ul>
+        <p style="margin-top: 100px"><img src="pictures/minskcss.png" class="logo"><img src="pictures/minskjs.png" class="logo"><img src="pictures/css-minsk-js.svg" style="background-color: #2b2727; height: 75px" class="logo"></p>
+      </div><img src="pictures/me.jpg" class="cover"/>
     </section>
     <section id="" class="slide">
-      <h2>О чем расскажу</h2>
+      <h2 class="label">О чем расскажу</h2>
       <ul>
-        <li>Что такое Bootstrap, зачем появился и почему стал популярным</li>
-        <li>Плюсы и минусы UI библиотек на примере Bootstrap</li>
-        <li>Как сделать свой Bootstrap для проекта с компонентным подходом</li>
+        <li>Что такое Bootstrap</li>
+        <li>Плюсы и минусы UI библиотек</li>
+        <li>Как сделать свой Bootstrap</li>
+      </ul>
+    </section>
+    <section id="" class="slide"><img src="pictures/bootstrap.jpg" class="cover"/>
+    </section>
+    <section id="" class="slide">
+      <h2 class="label">Bootstrap - это...</h2>
+      <ul>
+        <li>Библиотека компонентов</li>
+        <li>CSS фреймворк</li>
+        <li>UI библиотека</li>
       </ul>
     </section>
     <section id="" class="slide">
-      <h2>Что такое Bootstrap</h2>
-      <p>Библиотека компонентов для унификации интерфейса</p>
-    </section>
-    <section id="" class="slide">
-      <h2>Зачем появился?</h2>
+      <h2 class="label">Зачем появился?</h2>
       <p>Чтобы унифицировать интерфейс одной отдельно взятой компании</p>
       <p>Уход из твиттера - https://blog.getbootstrap.com/2012/09/29/onward/</p>
     </section>
     <section id="" class="slide">
-      <h2>Почему стал популярным</h2>
-      <p>просто, быстро и удобно копипастить</p>
-      <p>большой набор базовых, рутинных компонентов</p>
-      <p>Выглядит презентабельно из коробки</p>
-      <p>Это HTML, CSS и JS (jQuery)</p>
-    </section>
-    <section id="" class="slide">
-      <h2>Мой первый сайт на Bootstrap 2</h2>
-      <p>http://3d.miu.by/</p>
-      <p>Изначально был сделан "чистым", но была боль с кроссбраузерностью</p>
-      <p>2013 год: поддержка ie6 как основного браузера</p>
-    </section>
-    <section id="" class="slide">
-      <h2>Версии для JS фреймворков</h2>
-      <p>React Bootstrap (https://react-bootstrap.github.io)</p>
-      <p>ng-bootstrap (https://ng-bootstrap.github.io)</p>
-      <p>BootstrapVue (https://bootstrap-vue.js.org/)</p>
-      <p>Но это полностью переписанные под фреймворки библиотеки компонентов!</p>
-    </section>
-    <section id="" class="slide">
-      <h2>Что в нем хорошо</h2>
-      <p>типографика</p>
-      <p>семантика и a11y</p>
-      <p>Grid system -> кто верстал флоутами, тот поймет</p>
-      <p>респонсив из коробки</p>
-      <p>расширенная кроссбраузерность</p>
-    </section>
-    <section id="" class="slide">
-      <h2>Типографика</h2>
-      <p>Простой кит по заголовкам и тексту</p>
-      <p>Аналогичные инструменты</p>
+      <h2 class="label">Почему Bootstrap популярен</h2>
       <ul>
-        <li>Есть почти во всех аналогах</li>
-        <li>https://devinhunt.github.io/typebase.css/</li>
-        <li>https://matejlatin.github.io/Gutenberg/</li>
-        <li>http://typeplate.com/</li>
+        <li>Просто, быстро и удобно копипастить</li>
+        <li class="next">Большой набор базовых компонентов</li>
+        <li class="next">Выглядит презентабельно из коробки</li>
+        <li class="next">Только HTML, CSS и JS (jQuery)</li>
       </ul>
-      <p>Как применить на своем проекте? Сделать UI kit со стилями типографики, и использовать только их</p>
     </section>
     <section id="" class="slide">
-      <h2>Семантика и a11y</h2>
-      <p>Не говорит использовать section или article</p>
-      <p>Но и не запрещает, так как стили на классах</p>
-      <p>Базовые требования a11y  соотвествует, есть aria и role</p>
-      <p>Почему круто? Потому что благодаря копипасте не делаете совсем плохо</p>
+      <h2 class="label">Мой первый сайт на Bootstrap 2</h2>
+      <h2 class="label next">2013</h2><a href="http://3d.miu.by/" class="copyright">http://3d.miu.by/</a><img src="pictures/miu.jpg" class="cover"/>
     </section>
     <section id="" class="slide">
-      <h2>Grid system</h2>
-      <p>Макетные сетки -> визуальный порядок</p>
-      <p>https://www.surgebook.com/egorkomarov/book/osnovi_web_dizaina/setka-grid-system https://habr.com/ru/post/464115/</p>
-      <p>Вертикальный ритм - о нем мало кто вообще знает</p>
-      <p>Но это все про дизайн. С чего начать? Рассказать дизайнерам о такой штуке. Возможно, им понравится</p>
+      <h2 class="label">Версии для JS фреймворков</h2>
+      <ul>
+        <li><a href="https://react-bootstrap.github.io" class="github">React Bootstrap</a></li>
+        <li><a href="https://ng-bootstrap.github.io">ng-bootstrap</a></li>
+        <li><a href="https://bootstrap-vue.js.org/">BootstrapVue</a></li>
+      </ul>
+      <p class="next">Эти библиотеки полностью переписаны под фреймворки!</p>
     </section>
     <section id="" class="slide">
-      <h2>респонсив из коробки + mobile first</h2>
-      <p>Как определить, mobile или desktop first? По медиа выражениям</p>
-      <p>min-width/min-height -> mobile</p>
-      <p>max-width/max-height -> desktop</p>
-      <p>почему подход крутой в 2019 году? Потому что http2 позволяет загружать небольшие бандлы эффективно</p>
+      <h2 class="label">Что в нем хорошо</h2>
+      <ul>
+        <li>Типографика</li>
+        <li>Cемантика и a11y</li>
+        <li>Grid system</li>
+        <li>Responsive Web Design и Mobile First</li>
+        <li>Расширенная кроссбраузерность</li>
+      </ul>
     </section>
     <section id="" class="slide">
-      <h2>расширенная кроссбраузерность</h2>
-      <p>Почему круто? Когда другие годами правили баги кроссбраузерность, то можно и заглянуть в реализацию похожих компонентов</p>
+      <h2 class="shout label">Типографика</h2>
+    </section>
+    <section id="" class="slide">
+      <h2 class="label">Типографика</h2>
+      <p>Простой кит по заголовкам и тексту</p>
+      <ul>
+        <li class="next"><a href="https://devinhunt.github.io/typebase.css/">typebase.css</a></li>
+        <li class="next"><a href="https://matejlatin.github.io/Gutenberg/">Gutenberg</a></li>
+        <li class="next"><a href="http://typeplate.com/">Typeplate</a></li>
+      </ul><img src="pictures/typo1.jpg" class="cover"/>
+    </section>
+    <section id="" class="slide">
+      <h2 class="label">Как применить?</h2>
+      <ul>
+        <li>Сделать UI Kit со стилями типографики<img src="pictures/typo2.jpg" class="cover"/>
+        </li>
+        <li class="next">Типографика - основа стиля сайта<img src="pictures/typo3.jpg" class="cover"/>
+        </li>
+      </ul>
+    </section>
+    <section id="" class="slide  no-page"><img src="pictures/typo-example1.jpg" class="cover"/><span class="next"><img src="pictures/typo-example2.jpg" class="cover"/></span><span class="next"><img src="pictures/typo-example3.jpg" class="cover"/></span>
+    </section>
+    <section id="" class="slide">
+      <h2 class="shout label">Семантика и&nbsp;a11y</h2>
+    </section>
+    <section id="" class="slide">
+      <h2 class="label">Семантика</h2>
+      <ul>
+        <li>Не говорит использовать section или article</li>
+        <li class="next">Но и не запрещает, так как стили на классах</li>
+      </ul><span class="next"><img src="pictures/semantic-hell.jpg" class="cover"/></span>
+    </section>
+    <section id="" class="slide">
+      <h2 class="label">a11y</h2>
+      <ul>
+        <li>Базовые требования a11y</li>
+        <li>Присутствуют aria и role</li>
+      </ul><img src="pictures/a11y.jpg" class="cover"/>
+    </section>
+    <section id="" class="slide">
+      <h2 class="label">Как применить?</h2>
+      <ul>
+        <li>Задумываться о семантике и a11y</li>
+        <li class="next">Верстать семантично</li>
+        <li class="next">Проверять базовое a11y</li>
+      </ul>
+    </section>
+    <section id="" class="slide  shout">
+      <h2 class="label shout">Grid system</h2>
+    </section>
+    <section id="" class="slide  no-page"><img src="pictures/grids-yes.jpg" class="cover"/>
+    </section>
+    <section id="" class="slide">
+      <h2 class="label">Grid system</h2>
+      <p>Модульные сетки = визуальный порядок</p>
+      <ul>
+        <li class="empty"><a href="https://www.surgebook.com/egorkomarov/book/osnovi_web_dizaina/setka-grid-system">Сетка (Grid System), Егор Комаров</a></li>
+      </ul><img src="pictures/grids1.jpg" class="cover"/>
+    </section>
+    <section id="" class="slide"><img src="pictures/grids.jpg" class="cover"/>
+    </section>
+    <section id="" class="slide">
+      <h2 class="label">Как применить?</h2>
+      <ul>
+        <li>Рассказать дизайнеру о сетках</li>
+        <li>Начать использовать CSS Grid Layout</li>
+      </ul>
+      <ul>
+        <li class="empty next"><a href="https://codepen.io/lautsevich/pen/PRmPxv">CSS Grid Framework by Павел Ловцевич</a></li>
+      </ul>
+    </section>
+    <section id="" class="slide">
+      <h2 class="shout label">RWD и MF</h2>
+      <p style="margin-top: 320px; text-align: center">*Responsive Web Design и Mobile First</p><span class="next"><img src="pictures/captain.jpg" class="cover"/></span>
+    </section>
+    <section id="" class="slide">
+      <h2 class="label">Mobile First и Desktop First</h2>
+      <pre><code class="css">// Mobile First
+@media (min-width: ...) { ... }
+@media (min-height: ...) { ... }</code></pre>
+      <pre class="next"><code class="css">// Desktop First
+@media (max-width: ...) { ... }
+@media (max-height: ...) { ... }</code></pre>
+    </section>
+    <section id="" class="slide">
+      <h2 class="label">Как применить?</h2>
+      <ul>
+        <li>Начни делать Mobile First!</li>
+        <li>Мобильные - это важно!</li>
+        <li>Я серьезно, и дизанейру своем скажи!</li>
+      </ul>
+    </section>
+    <section id="" class="slide">
+      <h2 class="shout label">Кроссбраузерность</h2>
+    </section>
+    <section id="" class="slide">
+      <h2 class="label">Кроссбраузерность</h2>
+      <ul>
+        <li>Браузер - неконтролируемая среда</li>
+        <li>Чем сложнее код, тем больше ошибок</li><img src="pictures/browsers.jpg" class="cover"/>
+      </ul>
+    </section>
+    <section id="" class="slide">
+      <h2 class="label">Как применить?</h2>
+      <ul>
+        <li>Начни тестировать свой код кроссбраузерно</li>
+        <li>Да, на реальных девайсах</li>
+        <li>Загляни в исходники Bootstrap за вдохновением</li>
+      </ul>
+      <p><a href="https://neesoglasnaja.github.io/moscowcss_11/">Тестирование фронтенда для разработчиков</a></p>
     </section>
     <section id="" class="slide">
       <h2>Что в нем плохо</h2>
@@ -293,5 +390,7 @@
     </section>
     <div class="progress"></div>
     <script src="shower/shower.min.js"></script>
+    <script src="vendor/highlight.pack.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
   </body>
 </html>

@@ -1,21 +1,14 @@
-main-color = #6d000b
-highlight-color = #6d000b
+main-color = #8C1488
+highlight-color = #4A148C
 important-color = #a11212
 back-color = #1b1b1b
 
-@font-face {
-  font-family: 'Amatic SC';
-  font-style: normal;
-  font-weight: 700;
-  src: local('Amatic SC Bold'), local('AmaticSC-Bold'), url(./fonts/AmaticSC-Bold-Cyrillic.woff2) format('woff2');
-  unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
-}
 
 @font-face {
-  font-family: 'Amatic SC';
+  font-family: 'PT Sans';
   font-style: normal;
   font-weight: 700;
-  src: local('Amatic SC Regular'), local('AmaticSC-Regular'), url(./fonts/AmaticSC-Bold.woff2) format('woff2');
+  src: local('PT Sans Regular'), local('AmaticSC-Regular'), url(./fonts/AmaticSC-Bold.woff2) format('woff2');
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
 
@@ -44,6 +37,9 @@ back-color = #1b1b1b
 	padding-left 60px
 	padding-right 60px
 
+	a
+		color highlight-color
+
 	&.no-top
 		padding-top: 0
 
@@ -57,11 +53,11 @@ back-color = #1b1b1b
 
 	h2
 		color: back-color
-		font-family: 'Amatic SC', sans-serif;
+		font-family: 'PT Sans', sans-serif;
 
 		&.square
 			color: #ffffff
-			font-family: 'Amatic SC', sans-serif;
+			font-family: 'PT Sans', sans-serif;
 			margin-top: -30px
 			text-align: center;
 			position: relative;
@@ -113,11 +109,11 @@ back-color = #1b1b1b
 		text-align: center;
 		width: 100%;
 		left: 0;
-		font-family: 'Amatic SC', sans-serif;
+		font-family: 'PT Sans', sans-serif;
 		font-size: 2em;
 
 	.subtitle
-        font-family: 'Amatic SC', sans-serif;
+        font-family: 'PT Sans', sans-serif;
         background-color: #ddd
         width: auto
         display: inline-block;
@@ -126,9 +122,15 @@ back-color = #1b1b1b
         line-height: 60px;
 
 
+	.label
+		background: highlight-color
+		background: linear-gradient(90deg, highlight-color 0%, main-color 100%)
+		color: #fff
+		padding: 10px;
+		display inline-block
 
-
-
+	ul>li.empty::before
+		opacity: 0
 
 .hightlight
 .important
@@ -201,7 +203,7 @@ figcaption
 
 
 .slide ul>li:lang(ru)::before
-    color: #cd0011
+    color: highlight-color
     content: '\2713';
 
 .slide li>ul>li
