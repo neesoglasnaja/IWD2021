@@ -242,36 +242,45 @@ html(lang='ru')
       h2(style="margin-top: 250px; text-align: center;") Плохой дизайн сложно превратить в&nbsp;хороший CSS фреймворк
       +cover('pictures/warning.jpg')
     +slide({header: "", classes: ""})
-      h2.label Без хорошего UI Kit...
+      h2.label Без UI Kit...
       img(src="https://neesoglasnaja.github.io/moscowcss_11/pictures/ui-kit.jpg", width="100%")
     +slide({header: "", classes: ""})
       h2.label ...всё будет ОЧЕНЬ ПЛОХО
       img(src="https://neesoglasnaja.github.io/moscowcss_11/pictures/bad-code-2.jpg", width="100%")
     +slide({header: "", classes: ""})
       +cover('pictures/tech.jpg')
-    +slide({header: "Препроцессоры vs PostCSS", classes: ""})
-      p В 2019 можно и без препроцессоров
-      p Пруф от 2018 года - http://frontendconf.ru/moscow-rit/2018/abstracts/3326
-      р В большом проекте полностью сменить технологию не так-то и просто
-      p Чем PostCSS лучше препроцессора? Нативностью и собственным выбором плагинов
+    +slide({header: "", classes: ""})
+      a.copyright(href="https://youtu.be/-DvdYLWnPhc") https://youtu.be/-DvdYLWnPhc
+      +cover('pictures/seriozha.jpg')
     +slide({header: "", classes: ""})
       h2.label Из чего состоит Oopstrap
       ul
+        li Код рабочего проекта
         li Документация
-        li layouts & grid
-        li Типографика и контент
-        li Компоненты
-        li Утилитарные классы
-    +slide({header: "Документация", classes: ""})
-      p davidhund/styleguide-generators
+    +slide({header: "", classes: ""})
+      a.copyright(href="https://css-minsk-js.by") https://css-minsk-js.by
+      +cover('pictures/css-minsk-js.jpg')
+    +slide({header: "", classes: ""})
+      h2.label Проект состоит из...
+      ul
+        li Настроек проекта
+        li Глобальных стилей, переменных
+        li Grid system
+        li Типографики и стилей контента
+        li Компонентов
+    +slide({header: "", classes: ""})
+      a.copyright(href="https://youtu.be/gBgS5Fzhe5c") https://youtu.be/gBgS5Fzhe5c
+      +cover('pictures/chernivtsijs.jpg')
+    +slide({header: "", classes: ""})
+      p Простая структура файлов
+    +slide({header: "", classes: ""})
+      h2.shout(style="font-size: 2em;")
+        a.link.link-github(href="https://github.com/davidhund/styleguide-generators") davidhund/styleguide-generators
     +slide({header: "", classes: ""})
       a.copyright(href="https://github.com/morishitter/postcss-style-guide") https://github.com/morishitter/postcss-style-guide
       +cover('pictures/psg.jpg')
     +slide({header: "", classes: ""})
       img(src="https://github.com/morishitter/postcss-style-guide/raw/master/style-guide-default.png")
-    +slide({header: "Устанавливаем границы", classes: ""})
-    +slide({header: "Stylelint", classes: ""})
-      p Ссылка на мой доклад
     +slide({header: "custom properties", classes: ""})
       p Более мощный инструмент, чем  переменные препроцессоров
       р Имеет каскадность и фоллбек

@@ -220,3 +220,20 @@ figcaption
 	top: 80px
 	left: 60px
 	font-size: 0.75em;
+
+.link
+    position relative
+    margin-left: 1.8em
+    line-height: 1.3em
+.link::before
+    left: -1.8em;
+    position absolute
+    top 0.1em
+    display inline-block
+    width 1.5em
+    height 1.4em
+    content ''
+    background-repeat no-repeat
+    background-size contain
+.link-github::before
+    background-image url('pictures/github-logo.svg')
