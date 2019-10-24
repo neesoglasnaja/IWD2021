@@ -206,27 +206,34 @@
       <p><a href="https://neesoglasnaja.github.io/moscowcss_11/">Тестирование фронтенда для разработчиков</a></p>
     </section>
     <section id="" class="slide">
-      <h2>Что в нем плохо</h2>
-      <p>Проблемы большого опенсорса</p>
-      <p>Сложность кастомизации</p>
-      <p>Отстутсвие методологии наименования</p>
-      <p>Зависимость от jQuery</p>
+      <h2 class="label">Что в нем плохо</h2>
+      <ul>
+        <li class="next">Проблемы большого опенсорса</li>
+        <li class="next">Сложность кастомизации</li>
+        <li class="next">Отсутствие методологии наименования</li>
+        <li class="next">Зависимость от jQuery</li><img src="pictures/sad.jpg" class="cover"/>
+      </ul>
+    </section>
+    <section id="" class="slide  shout">
+      <h2 class="label shout">Проблемы Open Source</h2>
     </section>
     <section id="" class="slide">
-      <h2>Проблемы большого опенсорса</h2>
+      <h2 class="label">Проблемы большого опенсорса</h2>
       <ul>
         <li>Унификация</li>
-        <li>Инертность - новые фичи появляются не быстро</li>
-        <li>Отставание от стандартов</li>
-        <li>Хочешь кастом - пиши свое</li>
+        <li class="next">Инертность</li>
+        <li class="next">Отставание от стандартов</li>
       </ul>
+    </section>
+    <section id="" class="slide  shout">
+      <h2 class="label shout">Кастомизация</h2>
     </section>
     <section id="" class="slide">
       <h2>Сложность кастомизации</h2>
-      <p>Правильная темизация интерфейса - нетривиальная задача</p>
-      <p>В CSS нет cкоупинга (ака изоляция стилей), но есть глобальная область видимости</p>
-      <p>Бутстрап позволяет кастомизировать базовую тем, но исходники в SASS</p>
-      <p>Поэтому все пишут просто стили поверх, раздувая кодовую базу и используя каскад и !important</p>
+      <ul>
+        <li>Есть Sass переменные</li>
+        <li>В CSS нет изоляции стилей -> каскад и !important</li>
+      </ul>
     </section>
     <section id="" class="slide">
       <h2>неправильная кастомизация -> ненужные зависимости</h2>
@@ -234,32 +241,30 @@
       <p>Следите за зависимостями, используйте для этого инструменты</p>
     </section>
     <section id="" class="slide">
+      <h2 class="shout label">Методология наименования</h2>
+    </section>
+    <section id="" class="slide">
       <h2>Отстутсвие методологии наименования</h2>
       <p>Отстутсвие методологии -> каша в селекторах</p>
       <p>классы-модификаторы / утилитарные классы</p>
     </section>
     <section id="" class="slide">
-      <h2>Зависимость от jQuery</h2>
-      <p>Понять, простить и ждать</p>
-      <p>В планах ее убрать, но пока так https://blog.getbootstrap.com/2019/02/11/bootstrap-4-3-0/</p>
+      <h2 class="label">Зависимость от jQuery</h2><a href="https://blog.getbootstrap.com/2019/02/11/bootstrap-4-3-0/" class="copyright">.Когда-нибудь. Работа идет</a><img src="pictures/forgive.jpg" class="cover"/>
+    </section>
+    <section id="" class="slide"><img src="pictures/steal.jpg" class="cover"/>
+    </section>
+    <section id="" class="slide"><img src="pictures/oopstrap.jpg" class="cover"/>
     </section>
     <section id="" class="slide">
-      <h2>Делаем свой Oopstrap</h2>
-      <p>Любой проект, в котором использует компонентный подход к верстке, можно превратить в CSS фреймворк</p>
+      <h2 style="margin-top: 250px; text-align: center;">Плохой дизайн сложно превратить в&nbsp;хороший CSS фреймворк</h2><img src="pictures/warning.jpg" class="cover"/>
     </section>
     <section id="" class="slide">
-      <h2>Спойлер</h2>
-      <p>Плохой дизайн сложно превратить в хороший CSS фреймворк</p>
+      <h2 class="label">Без хорошего UI Kit...</h2><img src="https://neesoglasnaja.github.io/moscowcss_11/pictures/ui-kit.jpg" width="100%">
     </section>
     <section id="" class="slide">
-      <h2>Без хорошего UI Kit...</h2><img src="https://neesoglasnaja.github.io/moscowcss_11/pictures/ui-kit.jpg" width="100%">
+      <h2 class="label">...всё будет ОЧЕНЬ ПЛОХО</h2><img src="https://neesoglasnaja.github.io/moscowcss_11/pictures/bad-code-2.jpg" width="100%">
     </section>
-    <section id="" class="slide">
-      <h2>...все будет ОЧЕНЬ ПЛОХО</h2><img src="https://neesoglasnaja.github.io/moscowcss_11/pictures/bad-code-2.jpg" width="100%">
-    </section>
-    <section id="" class="slide">
-      <h2>Технологии</h2>
-      <p>HTML + CSS (PostCSS)</p>
+    <section id="" class="slide"><img src="pictures/tech.jpg" class="cover"/>
     </section>
     <section id="" class="slide">
       <h2>Препроцессоры vs PostCSS</h2>
@@ -268,7 +273,7 @@
       <p>Чем PostCSS лучше препроцессора? Нативностью и собственным выбором плагинов</p>
     </section>
     <section id="" class="slide">
-      <h2>Из чего состоит Oopstrap</h2>
+      <h2 class="label">Из чего состоит Oopstrap</h2>
       <ul>
         <li>Документация</li>
         <li>layouts & grid</li>
@@ -281,8 +286,7 @@
       <h2>Документация</h2>
       <p>davidhund/styleguide-generators</p>
     </section>
-    <section id="" class="slide">
-      <p>https://github.com/morishitter/postcss-style-guide</p>
+    <section id="" class="slide"><a href="https://github.com/morishitter/postcss-style-guide" class="copyright">https://github.com/morishitter/postcss-style-guide</a><img src="pictures/psg.jpg" class="cover"/>
     </section>
     <section id="" class="slide"><img src="https://github.com/morishitter/postcss-style-guide/raw/master/style-guide-default.png">
     </section>
@@ -359,30 +363,34 @@
       <p>Большинству проектов достаточно парочки таких классов как visibility-hidden, display-none и т.д.</p>
       <p>А остальное - в утиль. Вот серьезно, зачему 20 классов border, если граница задается один свойством?! </p>
     </section>
-    <section id="" class="slide">
-      <h2>Вуаля!</h2>
-      <p>CSS библиотека, заточенная под конкретный проект</p>
-      <p>Со встроенной документацией</p>
-      <p>С конкретными примерами компонентов конкретного проекта</p>
-      <p>И это не исключает использования сторонних библиотек</p>
+    <section id="" class="slide"><img src="pictures/spongebob.jpg" class="cover"/>
     </section>
     <section id="" class="slide">
-      <h2>Когда брать чужое?</h2>
+      <h2 class="label">Вуаля!</h2>
       <ul>
-        <li>Разрабатывается быстрый прототип</li>
-        <li>Дизайн "заточен" под выбранную UI библиотеку</li>
-        <li>Нет дизайна</li>
-        <li>Вы не умеете верстать</li>
-        <li>Просто лень</li>
+        <li>CSS библиотека, заточенная под конкретный проект</li>
+        <li>Со встроенной документацией</li>
+        <li>С конкретными примерами компонентов конкретного проекта</li>
+        <li>Сторонние библиотеки не запрещены</li>
       </ul>
     </section>
     <section id="" class="slide">
-      <h2>Подводя итог</h2>
+      <h2 class="label">Когда брать чужое?</h2>
+      <ul>
+        <li>Разрабатывается быстрый прототип</li>
+        <li class="next">Дизайн "заточен" под выбранную UI библиотеку</li>
+        <li class="next">Нет дизайна</li>
+        <li class="next">Вы не умеете верстать</li>
+        <li class="next">Просто лень</li>
+      </ul>
+    </section>
+    <section id="" class="slide">
+      <h2 class="label">Подводя итог</h2>
       <ul>
         <li>Не ненавидьте библиотеки "потому что модно"</li>
-        <li>Пользуйтесь инструментами осознанно</li>
-        <li>Знайте возможности современных CSS, HTML и JS</li>
-        <li>Не переставайте учиться</li>
+        <li class="next">Пользуйтесь инструментами осознанно</li>
+        <li class="next">Знайте возможности современных CSS, HTML и JS</li>
+        <li class="next">Не переставайте учиться</li>
       </ul>
     </section>
     <section id="theend" class="slide">
