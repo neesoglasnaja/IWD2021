@@ -51,32 +51,28 @@ html(lang='ru')
         li Что такое Bootstrap
         li Плюсы и минусы UI библиотек
         li Как сделать свой Bootstrap
-    +slide({header: "", classes: ""})
+      +cover('pictures/philosoraptor.jpg')
+    +slide({header: "", classes: "no-page"})
       +cover('pictures/bootstrap.jpg')
     +slide({header: "", classes: ""})
       h2.label Bootstrap - это...
       ul
         li Библиотека компонентов
-        li CSS фреймворк
-        li UI библиотека
+        li.next CSS фреймворк
+        li.next UI библиотека
+    +slide({header: "", classes: "no-page"})
+      a.copyright(href="https://blog.getbootstrap.com/2012/09/29/onward/") Уход Bootstrap из Twitter
+      +cover('pictures/twitter.jpg')
     +slide({header: "", classes: ""})
-      h2.label Зачем появился?
-      p Чтобы унифицировать интерфейс одной отдельно взятой компании
-      p Уход из твиттера - https://blog.getbootstrap.com/2012/09/29/onward/
-    +slide({header: "", classes: ""})
-      h2.label Почему Bootstrap популярен
+      h2.label Почему Bootstrap
       ul
         li Просто, быстро и удобно копипастить
         li.next Большой набор базовых компонентов
         li.next Выглядит презентабельно из коробки
-        li.next Только HTML, CSS и JS (jQuery)
+        li.next Только HTML, CSS и JavaScript (jQuery)
+      +cover('pictures/not-bad.jpg')
     +slide({header: "", classes: ""})
-      h2.label Мой первый сайт на Bootstrap 2
-      h2.label.next 2013
-      a.copyright(href="http://3d.miu.by/") http://3d.miu.by/
-      +cover('pictures/miu.jpg')
-    +slide({header: "", classes: ""})
-      h2.label Версии для JS фреймворков
+      h2.label Версии для JS фреймворков...
       ul
         li
           a.github(href="https://react-bootstrap.github.io") React Bootstrap
@@ -84,7 +80,19 @@ html(lang='ru')
           a(href="https://ng-bootstrap.github.io") ng-bootstrap
         li
           a(href="https://bootstrap-vue.js.org/") BootstrapVue
-      p.next Эти библиотеки полностью переписаны под фреймворки!
+        li ...
+      h2.label.next ...полностью переписаны!
+    +slide({header: "", classes: "no-page"})
+      +cover('pictures/story.jpg')
+    +slide({header: "", classes: "no-page"})
+      h2.label Мой первый сайт на Bootstrap 2
+      h2.label.next 2013
+      a.copyright(href="http://3d.miu.by/") http://3d.miu.by/
+      +cover('pictures/miu.jpg')
+    +slide({header: "", classes: ""})
+      h2.shout.label Что в Bootstrap хорошо
+    +slide({header: "", classes: ""})
+      +cover('pictures/gif/lol.webp')
     +slide({header: "", classes: ""})
       h2.label Что в нем хорошо
       ul
@@ -93,6 +101,7 @@ html(lang='ru')
         li Grid system
         li Responsive Web Design и Mobile First
         li Расширенная кроссбраузерность
+      div.next
     +slide({header: "", classes: ""})
       h2.shout.label Типографика
     +slide({header: "", classes: ""})
@@ -106,6 +115,8 @@ html(lang='ru')
         li.next
           a(href="http://typeplate.com/") Typeplate
       +cover('pictures/typo1.jpg')
+    +slide({header: "", classes: ""})
+      h2.shout.label Шрифт - основа стиля
     +slide({header: "", classes: ""})
       h2.label Как применить?
       ul
@@ -167,6 +178,8 @@ html(lang='ru')
       span.next
         +cover('pictures/captain.jpg')
     +slide({header: "", classes: ""})
+        +cover('pictures/rwd.jpg')
+    +slide({header: "", classes: ""})
       h2.label Mobile First и Desktop First
       pre
         code.css
@@ -222,6 +235,10 @@ html(lang='ru')
       ul
         li Есть Sass переменные
         li В CSS нет изоляции стилей -> каскад и !important
+    +slide({header: "", classes: "shout"})
+      +cover('pictures/crush-kill.jpg')
+    +slide({header: "", classes: "shout"})
+      +cover('pictures/ploho.jpg')
     +slide({header: "неправильная кастомизация -> ненужные зависимости", classes: ""})
       p Не надо так!
       p Следите за зависимостями, используйте для этого инструменты
@@ -248,11 +265,6 @@ html(lang='ru')
       h2.label ...всё будет ОЧЕНЬ ПЛОХО
       img(src="https://neesoglasnaja.github.io/moscowcss_11/pictures/bad-code-2.jpg", width="100%")
     +slide({header: "", classes: ""})
-      +cover('pictures/tech.jpg')
-    +slide({header: "", classes: ""})
-      a.copyright(href="https://youtu.be/-DvdYLWnPhc") https://youtu.be/-DvdYLWnPhc
-      +cover('pictures/seriozha.jpg')
-    +slide({header: "", classes: ""})
       h2.label Из чего состоит Oopstrap
       ul
         li Код рабочего проекта
@@ -260,6 +272,8 @@ html(lang='ru')
     +slide({header: "", classes: ""})
       a.copyright(href="https://css-minsk-js.by") https://css-minsk-js.by
       +cover('pictures/css-minsk-js.jpg')
+    +slide({header: "", classes: ""})
+      +cover('pictures/tech.jpg')
     +slide({header: "", classes: ""})
       h2.label Проект состоит из...
       ul
@@ -269,10 +283,13 @@ html(lang='ru')
         li Типографики и стилей контента
         li Компонентов
     +slide({header: "", classes: ""})
+      p Простая структура файлов
+    +slide({header: "", classes: ""})
       a.copyright(href="https://youtu.be/gBgS5Fzhe5c") https://youtu.be/gBgS5Fzhe5c
       +cover('pictures/chernivtsijs.jpg')
     +slide({header: "", classes: ""})
-      p Простая структура файлов
+      h2.label DRY
+      +cover('https://neesoglasnaja.github.io/moscowcss_11/pictures/good-code.jpg')
     +slide({header: "", classes: ""})
       h2.shout(style="font-size: 2em;")
         a.link.link-github(href="https://github.com/davidhund/styleguide-generators") davidhund/styleguide-generators
@@ -287,8 +304,6 @@ html(lang='ru')
       p Классный кейс - адаптивные элементы UI kit
     +slide({header: "Запрет на анархию в переменных", classes: ""})
       p "It's allowed to use only \"var(--var)\" for different color (--color-NAME); font (--font-family-NAME, --font-size-NAME); line height (--line-height-NAME); border radius (--border-radius-NAME); and shadows (--shadow-NAME) props. You CAN use 'inherit' for colors, font-size, font-family and line-height. You CAN use 'none' for border-radius and shadows"
-    +slide({header: "", classes: ""})
-      img(src="https://neesoglasnaja.github.io/moscowcss_11/pictures/good-code.jpg", width="100%")
     +slide({header: "", classes: ""})
       p И нет, переменные это не про то, чтобы не копипастить код
       p Основная задача переменных - контроль над стилями "темы"
@@ -347,10 +362,22 @@ html(lang='ru')
     +slide({header: "", classes: ""})
       h2.label Подводя итог
       ul
-        li Не ненавидьте библиотеки "потому что модно"
-        li.next Пользуйтесь инструментами осознанно
-        li.next Знайте возможности современных CSS, HTML и JS
-        li.next Не переставайте учиться
+        li Хватит ненавидеть библиотеки "потому что модно"
+        li.next Пользуйся инструментами осознанно
+        li.next Знай возможности современных CSS, HTML и JS
+    +slide({header: "", classes: "no-page"})
+      a.copyright(href="https://youtu.be/-DvdYLWnPhc") https://youtu.be/-DvdYLWnPhc
+      +cover('pictures/seriozha.jpg')
+    +slide({header: "", classes: "no-page"})
+      a.copyright(href="https://youtu.be/lDGOK3Iwfnc") https://youtu.be/lDGOK3Iwfnc
+      +cover('pictures/seriozha2.jpg')
+    +slide({header: "", classes: ""})
+      h2.label Подводя итог
+      ul
+        li Хватит ненавидеть библиотеки "потому что модно"
+        li Пользуйся инструментами осознанно
+        li Знай возможности современных CSS, HTML и JS
+        li.next Не переставай учиться
     +slide({name: 'theend', header: "", classes: ''})
       p.end-link(style="position: absolute; bottom: 5%; background-color: #1b1b1b")
         a.bigger(href="http://bit.ly/" target="_blank") bit.ly/

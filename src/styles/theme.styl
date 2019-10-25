@@ -1,4 +1,4 @@
-main-color = #8C1488
+main-color = #6f148a
 highlight-color = #4A148C
 important-color = #a11212
 back-color = #1b1b1b
@@ -129,8 +129,8 @@ back-color = #1b1b1b
 		padding: 10px;
 		display inline-block
 
-	ul>li.empty::before
-		opacity: 0
+	// ul>li.empty::before
+	// 	opacity: 0
 
 .hightlight
 .important
@@ -204,7 +204,10 @@ figcaption
 
 .slide ul>li:lang(ru)::before
     color: highlight-color
-    content: '\2713';
+    content: '\2BC0';
+
+.slide ol li, .slide ul li
+	padding-left: 32px;
 
 .slide li>ul>li
     color: #444;
