@@ -21,7 +21,8 @@ html(lang='ru')
       h1 !{title}
     +slide({name: 'cover', classes:'cover'})
       h2.label(style="margin-top: 50px;") Тебе не нужен Bootstrap!
-      p(style="font-size: 2em") Или нужен? Или все же не нужен?
+      p.next(style="font-size: 2em") Или нужен?
+        span.next  Или все же не нужен?
       p(style="opacity: 0.8; margin-top: 155px") Александра Шинкевич
         br
         a(href='https://twitter.com/neesoglasnaja' target="_blank") @neesoglasnaja
@@ -45,13 +46,6 @@ html(lang='ru')
           img.logo(src="pictures/minskjs.png")
           img.logo(src="pictures/css-minsk-js.svg", style="background-color: #2b2727; height: 75px")
       +cover('pictures/me.jpg')
-    +slide({header: "", classes: ""})
-      h2.label О чем расскажу
-      ul
-        li Что такое Bootstrap
-        li Плюсы и минусы UI библиотек
-        li Как сделать свой Bootstrap
-      +cover('pictures/philosoraptor.jpg')
     +slide({header: "", classes: "no-page"})
       +cover('pictures/bootstrap.jpg')
     +slide({header: "", classes: ""})
@@ -61,12 +55,93 @@ html(lang='ru')
         li.next CSS фреймворк
         li.next UI библиотека
     +slide({header: "", classes: "no-page"})
+      +cover('pictures/story.jpg')
+    +slide({header: "", classes: "no-page"})
       a.copyright(href="https://blog.getbootstrap.com/2012/09/29/onward/") Уход Bootstrap из Twitter
       +cover('pictures/twitter.jpg')
+    +slide({header: "", classes: "no-page"})
+      a.copyright(href="https://expo.getbootstrap.com") https://expo.getbootstrap.com
+      +cover('pictures/examples/codecademy.jpg')
+      div.next
+        +cover('pictures/examples/divshot.jpg')
+      div.next
+        +cover('pictures/examples/gosquared.jpg')
+    +slide({header: "", classes: "no-page"})
+      h2.label Мой первый сайт на Bootstrap 2
+      h2.label.next 2013
+      a.copyright(href="http://3d.miu.by/") http://3d.miu.by/
+      +cover('pictures/miu.jpg')
+    +slide({header: "", classes: "no-page"})
+      p https://www.devsaran.com/blog/10-best-reasons-use-bootstrap-amazing-web-designs
+      p https://www.k2bindia.com/top-reasons-why-bootstrap-is-the-best/
+      p https://www.quora.com/Is-there-a-reason-why-Bootstrap-is-used-in-every-web-framework-tutorial
+    +slide({header: "", classes: "no-page"})
+      p в какой-то момент все поменялось
+    +slide({header: "", classes: "no-page"})
+      h2 Убить Bootstrap
+      p https://www.fourkitchens.com/blog/article/you-dont-need-bootstrap/
+      p https://www.butterfly.com.au/blog/website-development/bootstrap-why-we-dont-use-the-framework-devs-are-raving-about
+      p https://dev.to/teamxenox/do-we-really-need-a-css-framework-4ma6
+      p https://frontendmasters.com/courses/advanced-css-layouts/refactoring-a-grid-system-bootstrap-is-dead/
+      p https://2019.stateofcss.com/technologies/css-frameworks/#bootstrap
+      p https://medium.com/@stasonmars/%D0%BA%D0%B0%D0%BA-%D1%8F-%D0%BF%D0%B5%D1%80%D0%B5%D1%81%D1%82%D0%B0%D0%BB-%D0%B8%D1%81%D0%BF%D0%BE%D0%BB%D1%8C%D0%B7%D0%BE%D0%B2%D0%B0%D1%82%D1%8C-bootstrap-%D0%B2-%D1%83%D0%B3%D0%BE%D0%B4%D1%83-css-grid-3e351e97425f
+      p https://hacks.mozilla.org/2016/04/you-might-not-need-a-css-framework/
+      p http://www.zingdesign.com/5-reasons-not-to-use-twitter-bootstrap/
+      p https://borealis.agency/stopped-using-bootstrap/255
+    +slide({header: "", classes: ""})
+      h2 А что реально плохо в нем?
+      +cover('pictures/sad.jpg')
+    //- +slide({header: "", classes: ""})
+    //-   h2.label Что в нем плохо
+    //-   ul
+    //-     li.next Проблемы большого опенсорса
+    //-     li.next Сложность кастомизации
+    //-     li.next Отсутствие методологии наименования
+    //-     li.next Зависимость от jQuery
+    //-     +cover('pictures/sad.jpg')
+    +slide({header: "", classes: "shout"})
+      h2.label.shout Проблемы Open Source
+    +slide({header: "", classes: ""})
+      h2.label Проблемы большого опенсорса
+      ul
+        li Унификация - есть только, что есть
+        li.next Инертность https://github.com/twbs/bootstrap/issues
+        li.next Отставание от стандартов (4 вышел в 01.18, флексы в CR в 2012)
+        p https://medium.com/@BennyOgidan/history-of-css-grid-and-css-flexbox-658ae6cfe6d2
+    +slide({header: "", classes: "shout"})
+      h2.label.shout Кастомизация
+    +slide({header: "Сложность кастомизации", classes: ""})
+      ul
+        li Есть Sass переменные
+    +slide({header: "", classes: "shout"})
+      +cover('pictures/crush-kill.jpg')
+    +slide({header: "", classes: ""})
+      p пример important который не работает
+    +slide({header: "", classes: "shout"})
+      +cover('pictures/ploho.jpg')
+    +slide({header: "неправильная кастомизация -> ненужные зависимости", classes: ""})
+      p Не надо так!
+    +slide({header: "", classes: ""})
+      h2.shout.label Методология наименования
+    +slide({header: "", classes: ""})
+      p пример классов в разметке
+    +slide({header: "", classes: ""})
+      p БЭМ победил
+      p https://2019.stateofcss.com/technologies/methodologies/#methodologies-experience-heatmap
+    +slide({header: "", classes: ""})
+      h2.label Зависимость от jQuery
+    +slide({header: "", classes: ""})
+      a.copyright(href="https://blog.getbootstrap.com/2019/02/11/bootstrap-4-3-0/") .В 5 версии. Работа идет
+      +cover('pictures/forgive.jpg')
+    +slide({header: "", classes: ""})
+      p неужели все так плохо?
+    +slide({header: "", classes: ""})
+      p Кто все еще использует?
+      p https://www.spotify.com/us/about-us/contact/
     +slide({header: "", classes: ""})
       h2.label Почему Bootstrap
       ul
-        li Просто, быстро и удобно копипастить
+        li Просто, быстро и удобно копипастить - хорошие доки
         li.next Большой набор базовых компонентов
         li.next Выглядит презентабельно из коробки
         li.next Только HTML, CSS и JavaScript (jQuery)
@@ -82,26 +157,23 @@ html(lang='ru')
           a(href="https://bootstrap-vue.js.org/") BootstrapVue
         li ...
       h2.label.next ...полностью переписаны!
-    +slide({header: "", classes: "no-page"})
-      +cover('pictures/story.jpg')
-    +slide({header: "", classes: "no-page"})
-      h2.label Мой первый сайт на Bootstrap 2
-      h2.label.next 2013
-      a.copyright(href="http://3d.miu.by/") http://3d.miu.by/
-      +cover('pictures/miu.jpg')
     +slide({header: "", classes: ""})
       h2.shout.label Что в Bootstrap хорошо
     +slide({header: "", classes: ""})
       +cover('pictures/gif/lol.webp')
-    +slide({header: "", classes: ""})
-      h2.label Что в нем хорошо
-      ul
-        li Типографика
-        li Cемантика и a11y
-        li Grid system
-        li Responsive Web Design и Mobile First
-        li Расширенная кроссбраузерность
-      div.next
+      div.next 
+        +cover('http://m.quickmeme.com/img/36/3693b256459380487160651bb6c2645b35caa5d4f917514ce9a1599dc1b031fe.jpg')
+    //- +slide({header: "", classes: ""})
+    //-   p 
+    //- +slide({header: "", classes: ""})
+    //-   h2.label Что в нем хорошо
+    //-   ul
+    //-     li Типографика
+    //-     li Cемантика и a11y
+    //-     li Grid system
+    //-     li Responsive Web Design и Mobile First
+    //-     li Расширенная кроссбраузерность
+    //-   div.next
     +slide({header: "", classes: ""})
       h2.shout.label Типографика
     +slide({header: "", classes: ""})
@@ -124,14 +196,14 @@ html(lang='ru')
           +cover('pictures/typo2.jpg')
         li.next Типографика - основа стиля сайта
           +cover('pictures/typo3.jpg')
-    +slide({header: "", classes: "no-page"})
-      +cover('pictures/typo-example1.jpg')
-      span.next
-        +cover('pictures/typo-example2.jpg')
-      span.next
-        +cover('pictures/typo-example3.jpg')
+    //- +slide({header: "", classes: "no-page"})
+    //-   +cover('pictures/typo-example1.jpg')
+    //-   span.next
+    //-     +cover('pictures/typo-example2.jpg')
+    //-   span.next
+    //-     +cover('pictures/typo-example3.jpg')
     +slide({header: "", classes: ""})
-      h2.shout.label Семантика и&nbsp;a11y
+      h2.shout Семантика и&nbsp;a11y
     +slide({header: "", classes: ""})
       h2.label Семантика
       ul
@@ -183,14 +255,12 @@ html(lang='ru')
       h2.label Mobile First и Desktop First
       pre
         code.css
-          | // Mobile First
+          | /* Mobile First */
           | @media (min-width: ...) { ... }
-          | @media (min-height: ...) { ... }
       pre.next
         code.css
-          | // Desktop First
+          | /* Desktop First */
           | @media (max-width: ...) { ... }
-          | @media (max-height: ...) { ... }
     +slide({header: "", classes: ""})
       h2.label Как применить?
       ul
@@ -213,44 +283,6 @@ html(lang='ru')
         li Загляни в исходники Bootstrap за вдохновением
       p
         a(href="https://neesoglasnaja.github.io/moscowcss_11/") Тестирование фронтенда для разработчиков
-    +slide({header: "", classes: ""})
-      h2.label Что в нем плохо
-      ul
-        li.next Проблемы большого опенсорса
-        li.next Сложность кастомизации
-        li.next Отсутствие методологии наименования
-        li.next Зависимость от jQuery
-        +cover('pictures/sad.jpg')
-    +slide({header: "", classes: "shout"})
-      h2.label.shout Проблемы Open Source
-    +slide({header: "", classes: ""})
-      h2.label Проблемы большого опенсорса
-      ul
-        li Унификация
-        li.next Инертность
-        li.next Отставание от стандартов
-    +slide({header: "", classes: "shout"})
-      h2.label.shout Кастомизация
-    +slide({header: "Сложность кастомизации", classes: ""})
-      ul
-        li Есть Sass переменные
-        li В CSS нет изоляции стилей -> каскад и !important
-    +slide({header: "", classes: "shout"})
-      +cover('pictures/crush-kill.jpg')
-    +slide({header: "", classes: "shout"})
-      +cover('pictures/ploho.jpg')
-    +slide({header: "неправильная кастомизация -> ненужные зависимости", classes: ""})
-      p Не надо так!
-      p Следите за зависимостями, используйте для этого инструменты
-    +slide({header: "", classes: ""})
-      h2.shout.label Методология наименования
-    +slide({header: "Отстутсвие методологии наименования", classes: ""})
-      p Отстутсвие методологии -> каша в селекторах
-      p классы-модификаторы / утилитарные классы
-    +slide({header: "", classes: ""})
-      h2.label Зависимость от jQuery
-      a.copyright(href="https://blog.getbootstrap.com/2019/02/11/bootstrap-4-3-0/") .Когда-нибудь. Работа идет
-      +cover('pictures/forgive.jpg')
     +slide({header: "", classes: ""})
       +cover('pictures/steal.jpg')
     +slide({header: "", classes: ""})
