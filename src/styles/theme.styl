@@ -54,6 +54,10 @@ back-color = #1b1b1b
 	h2
 		color: back-color
 		font-family: 'PT Sans', sans-serif;
+		background: highlight-color
+		background: -webkit-linear-gradient(90deg, highlight-color 0%, main-color 100%);
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
 
 		&.square
 			color: #ffffff
@@ -128,6 +132,8 @@ back-color = #1b1b1b
 		color: #fff
 		padding: 10px;
 		display inline-block
+		-webkit-background-clip: unset;
+		-webkit-text-fill-color: white;
 
 	// ul>li.empty::before
 	// 	opacity: 0
