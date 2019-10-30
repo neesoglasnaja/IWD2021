@@ -49,7 +49,7 @@ html(lang='ru')
     +slide({header: "", classes: "no-page"})
       +cover('pictures/bootstrap.jpg')
     +slide({header: "", classes: ""})
-      h2.label Bootstrap - это...
+      h2 Bootstrap - это...
       ul
         li Библиотека компонентов
         li.next CSS фреймворк
@@ -67,14 +67,18 @@ html(lang='ru')
       div.next
         +cover('pictures/examples/gosquared.jpg')
     +slide({header: "", classes: "no-page"})
-      h2.label Мой первый сайт на Bootstrap 2
-      h2.label.next 2013
       a.copyright(href="http://3d.miu.by/") http://3d.miu.by/
       +cover('pictures/miu.jpg')
     +slide({header: "", classes: "no-page"})
-      p https://www.devsaran.com/blog/10-best-reasons-use-bootstrap-amazing-web-designs
-      p https://www.k2bindia.com/top-reasons-why-bootstrap-is-the-best/
-      p https://www.quora.com/Is-there-a-reason-why-Bootstrap-is-used-in-every-web-framework-tutorial
+      +cover('pictures/fine.jpg')
+    +slide({header: "", classes: "no-page"})
+      +cover('pictures/best.jpg')
+      div.next
+        +cover('pictures/best-more.jpg')
+    +slide({header: "", classes: "no-page"})
+      +cover('pictures/worst.jpg')
+      div.next
+        +cover('pictures/worst-more.jpg')
     +slide({header: "", classes: "no-page"})
       p в какой-то момент все поменялось
     +slide({header: "", classes: "no-page"})
@@ -89,57 +93,58 @@ html(lang='ru')
       p http://www.zingdesign.com/5-reasons-not-to-use-twitter-bootstrap/
       p https://borealis.agency/stopped-using-bootstrap/255
     +slide({header: "", classes: ""})
-      h2 А что реально плохо в нем?
+      h2.ask Почему не&nbsp;нужен Bootstrap?
       +cover('pictures/sad.jpg')
-    //- +slide({header: "", classes: ""})
-    //-   h2.label Что в нем плохо
-    //-   ul
-    //-     li.next Проблемы большого опенсорса
-    //-     li.next Сложность кастомизации
-    //-     li.next Отсутствие методологии наименования
-    //-     li.next Зависимость от jQuery
-    //-     +cover('pictures/sad.jpg')
     +slide({header: "", classes: "shout"})
-      h2.label.shout Проблемы Open Source
+      h2.shout Проблемы Open Source
+      div.hashtag #плохо
+    +slide({header: "", classes: "no-page"})
+      h2 Проблемы Open Source
+      ul
+        li Есть только то, что есть
+          +cover('pictures/files.jpg')
+        li.next Инертность
+          +cover('pictures/issues.jpg')
+        li.next Отставание от стандартов
+          +cover('pictures/standards.jpg')
+    +slide({header: "", classes: "shout"})
+      h2.shout Кастомизация
+      div.hashtag #плохо
     +slide({header: "", classes: ""})
-      h2.label Проблемы большого опенсорса
-      ul
-        li Унификация - есть только, что есть
-        li.next Инертность https://github.com/twbs/bootstrap/issues
-        li.next Отставание от стандартов (4 вышел в 01.18, флексы в CR в 2012)
-        p https://medium.com/@BennyOgidan/history-of-css-grid-and-css-flexbox-658ae6cfe6d2
-    +slide({header: "", classes: "shout"})
-      h2.label.shout Кастомизация
-    +slide({header: "Сложность кастомизации", classes: ""})
-      ul
-        li Есть Sass переменные
+      +cover('pictures/theming.jpg')
+      div.next
+        +cover('pictures/gif/confused.gif')
     +slide({header: "", classes: "shout"})
       +cover('pictures/crush-kill.jpg')
     +slide({header: "", classes: ""})
       p пример important который не работает
     +slide({header: "", classes: "shout"})
       +cover('pictures/ploho.jpg')
-    +slide({header: "неправильная кастомизация -> ненужные зависимости", classes: ""})
-      p Не надо так!
+    +slide({header: "", classes: "shout"})
+      +cover('pictures/custom.jpg')
     +slide({header: "", classes: ""})
-      h2.shout.label Методология наименования
+      h2.shout Методология наименования
+      div.hashtag #плохо
     +slide({header: "", classes: ""})
       p пример классов в разметке
     +slide({header: "", classes: ""})
-      p БЭМ победил
-      p https://2019.stateofcss.com/technologies/methodologies/#methodologies-experience-heatmap
+      a.copyright(href="https://2019.stateofcss.com/technologies/methodologies/#methodologies-experience-heatmap") State of CSS #methodologies
+      +cover('pictures/bem.jpg')
     +slide({header: "", classes: ""})
-      h2.label Зависимость от jQuery
+      h2.shout jQuery
+      div.hashtag #плохо
     +slide({header: "", classes: ""})
-      a.copyright(href="https://blog.getbootstrap.com/2019/02/11/bootstrap-4-3-0/") .В 5 версии. Работа идет
+      a.copyright(href="https://blog.getbootstrap.com/2019/02/11/bootstrap-4-3-0/") .В 5 версии не будет. Работа идет
       +cover('pictures/forgive.jpg')
     +slide({header: "", classes: ""})
-      p неужели все так плохо?
+      h2.ask Использовать Bootstrap в&nbsp;2019?
+      +cover('pictures/philosoraptor.jpg')
+    +slide({header: "", classes: "no-page"})
+      +cover('pictures/themeforest.jpg')
+    +slide({header: "", classes: "no-page"})
+      +cover('pictures/spotify.jpg')
     +slide({header: "", classes: ""})
-      p Кто все еще использует?
-      p https://www.spotify.com/us/about-us/contact/
-    +slide({header: "", classes: ""})
-      h2.label Почему Bootstrap
+      h2 Почему Bootstrap
       ul
         li Просто, быстро и удобно копипастить - хорошие доки
         li.next Большой набор базовых компонентов
@@ -147,7 +152,7 @@ html(lang='ru')
         li.next Только HTML, CSS и JavaScript (jQuery)
       +cover('pictures/not-bad.jpg')
     +slide({header: "", classes: ""})
-      h2.label Версии для JS фреймворков...
+      h2 Версии для JS фреймворков...
       ul
         li
           a.github(href="https://react-bootstrap.github.io") React Bootstrap
@@ -158,27 +163,18 @@ html(lang='ru')
         li ...
       h2.label.next ...полностью переписаны!
     +slide({header: "", classes: ""})
-      h2.shout.label Что в Bootstrap хорошо
+      h2.ask Что хорошо в&nbsp;Bootstrap?
+      +cover('pictures/good.jpg')
     +slide({header: "", classes: ""})
       +cover('pictures/gif/lol.webp')
       div.next 
         +cover('http://m.quickmeme.com/img/36/3693b256459380487160651bb6c2645b35caa5d4f917514ce9a1599dc1b031fe.jpg')
-    //- +slide({header: "", classes: ""})
-    //-   p 
-    //- +slide({header: "", classes: ""})
-    //-   h2.label Что в нем хорошо
-    //-   ul
-    //-     li Типографика
-    //-     li Cемантика и a11y
-    //-     li Grid system
-    //-     li Responsive Web Design и Mobile First
-    //-     li Расширенная кроссбраузерность
-    //-   div.next
     +slide({header: "", classes: ""})
-      h2.shout.label Типографика
+      h2.shout Типографика
+      div.hashtag #ну_ok
     +slide({header: "", classes: ""})
-      h2.label Типографика
-      p Простой кит по заголовкам и тексту
+      h2 Типографика
+      p UI kit по заголовкам и текстовым стилям
       ul
         li.next
           a(href="https://devinhunt.github.io/typebase.css/") typebase.css
@@ -187,49 +183,54 @@ html(lang='ru')
         li.next
           a(href="http://typeplate.com/") Typeplate
       +cover('pictures/typo1.jpg')
+    +slide({header: "", classes: "no-page"})
+      +cover('pictures/font.jpg')
+    +slide({header: "", classes: "no-page"})
+      h2.ask Сделай UI Kit со&nbsp;стилями типографики
+      div.hashtag #justdoit
+      +cover('pictures/typo2.jpg')
     +slide({header: "", classes: ""})
-      h2.shout.label Шрифт - основа стиля
+      h2.shout Семантика
+      div.hashtag #ну_ок
+    +slide({header: "", classes: "no-page"})
+      +cover('pictures/choice.jpg')
+    +slide({header: "", classes: "no-page"})
+      +cover('pictures/semantic.jpg')
+    +slide({header: "", classes: "no-page"})
+      +cover('pictures/semantic-hell.jpg')
+      div.next
+        +cover('pictures/semantic-zoom.jpg')
+    +slide({header: "", classes: "no-page"})
+      +cover('pictures/makeev.jpg')
+    +slide({header: "", classes: "no-page"})
+      h2.ask Верстай семантично
+      div.hashtag #justdoit
+      a.copyright(href="https://www.youtube.com/watch?v=bDYEnNzprzE") Семантика для циников, Вадим Макеев
+      +cover('pictures/duck.jpg')
     +slide({header: "", classes: ""})
-      h2.label Как применить?
-      ul
-        li Сделать UI Kit со стилями типографики
-          +cover('pictures/typo2.jpg')
-        li.next Типографика - основа стиля сайта
-          +cover('pictures/typo3.jpg')
-    //- +slide({header: "", classes: "no-page"})
-    //-   +cover('pictures/typo-example1.jpg')
-    //-   span.next
-    //-     +cover('pictures/typo-example2.jpg')
-    //-   span.next
-    //-     +cover('pictures/typo-example3.jpg')
+      h2.shout a11y
+      div.hashtag #ну_ок
     +slide({header: "", classes: ""})
-      h2.shout Семантика и&nbsp;a11y
-    +slide({header: "", classes: ""})
-      h2.label Семантика
-      ul
-        li Не говорит использовать section или article
-        li.next Но и не запрещает, так как стили на классах
-      span.next
-        +cover('pictures/semantic-hell.jpg')
-    +slide({header: "", classes: ""})
-      h2.label a11y
-      ul
-        li Базовые требования a11y
-        li Присутствуют aria и role
       +cover('pictures/a11y.jpg')
     +slide({header: "", classes: ""})
-      h2.label Как применить?
-      ul
-        li Задумываться о семантике и a11y
-        li.next Верстать семантично
-        li.next Проверять базовое a11y
-    +slide({header: "", classes: "shout"})
-      h2.label.shout Grid system
+      h2.ask Верстай
+        br
+        | доступно
+      div.hashtag #justdoit
+    +slide({header: "", classes: ""})
+      h2.shout Макетные сетки
+      div.hashtag #ну_ок
     +slide({header: "", classes: "no-page"})
       +cover('pictures/grids-yes.jpg')
     +slide({header: "", classes: ""})
+      h2(style="margin-top: 90px; text-align: center; font-size: 90px;") Макетные&nbsp;сетки
+        br
+        | =
+        br
+        | визуальный&nbsp;порядок
+    +slide({header: "", classes: ""})
       h2.label Grid system
-      p Модульные сетки = визуальный порядок
+      p Макетные сетки = визуальный порядок
       ul
         li.empty
           a(href="https://www.surgebook.com/egorkomarov/book/osnovi_web_dizaina/setka-grid-system") Сетка (Grid System), Егор Комаров
@@ -334,8 +335,6 @@ html(lang='ru')
       p Более мощный инструмент, чем  переменные препроцессоров
       р Имеет каскадность и фоллбек
       p Классный кейс - адаптивные элементы UI kit
-    +slide({header: "Запрет на анархию в переменных", classes: ""})
-      p "It's allowed to use only \"var(--var)\" for different color (--color-NAME); font (--font-family-NAME, --font-size-NAME); line height (--line-height-NAME); border radius (--border-radius-NAME); and shadows (--shadow-NAME) props. You CAN use 'inherit' for colors, font-size, font-family and line-height. You CAN use 'none' for border-radius and shadows"
     +slide({header: "", classes: ""})
       p И нет, переменные это не про то, чтобы не копипастить код
       p Основная задача переменных - контроль над стилями "темы"

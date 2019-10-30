@@ -558,7 +558,7 @@
    left: 0;
    width: 100%;
    text-align: center;
-   line-height: 1;
+   line-height: 1.2;
    font-size: 150px;
    -webkit-transform: translateY(-50%);
    transform: translateY(-50%)
