@@ -114,6 +114,19 @@ html(lang='ru')
       +cover('pictures/theming.jpg')
       div.next
         +cover('pictures/gif/confused.gif')
+    +slide({header: "", classes: ""})
+      pre
+        code.css
+          | .btn {
+          |   /* ... */
+          |   cursor: if($enable-pointer-cursor-for-buttons, pointer, null);
+          |   @include button-size($btn-padding-y, $btn-padding-x, 
+          |      $btn-font-size, $btn-border-radius);
+          | }
+      p https://imgflip.com/s/meme/Jackie-Chan-WTF.jpg
+    +slide({header: "", classes: "no-page"})
+      a.copyright(href="https://youtu.be/-DvdYLWnPhc") https://youtu.be/-DvdYLWnPhc
+      +cover('pictures/seriozha.jpg')
     +slide({header: "", classes: "shout"})
       +cover('pictures/crush-kill.jpg')
     +slide({header: "", classes: ""})
@@ -233,22 +246,18 @@ html(lang='ru')
       +cover('pictures/grids.jpg')
     +slide({header: "", classes: ""})
       h2.ask Расскажи дизайнеру о&nbsp;сетках
-      //- h2.label Как применить?
-      //- ul
-      //-   li 
-      //-   li Начать использовать CSS Grid Layout
-      //- ul
-      //-   li.empty.next
-      //-     a(href="https://codepen.io/lautsevich/pen/PRmPxv") CSS Grid Framework by Павел Ловцевич
     +slide({header: "", classes: ""})
-      h2.shout.label RWD и MF
+      h2.shout RWD и MF
+      div.hashatag #ну_ok
       p(style="margin-top: 320px; text-align: center") *Responsive Web Design и Mobile First
       span.next
         +cover('pictures/captain.jpg')
     +slide({header: "", classes: ""})
         +cover('pictures/rwd.jpg')
     +slide({header: "", classes: ""})
-      h2.label Mobile First и Desktop First
+      p https://gs.statcounter.com/platform-market-share/desktop-mobile-tablet
+    +slide({header: "", classes: ""})
+      h2 Mobile First и Desktop First
       pre
         code.css
           | /* Mobile First */
@@ -258,27 +267,28 @@ html(lang='ru')
           | /* Desktop First */
           | @media (max-width: ...) { ... }
     +slide({header: "", classes: ""})
-      h2.label Как применить?
-      ul
-        li Начни делать Mobile First!
-        li Мобильные - это важно!
-        li Я серьезно, и дизанейру своем скажи!
+      p https://habr.com/ru/post/473186/
     +slide({header: "", classes: ""})
-      h2.shout.label Кроссбраузерность
+      h2.ask Начни делать Mobile First!
+      div.hashtag #justdoit
     +slide({header: "", classes: ""})
-      h2.label Кроссбраузерность
-      ul
-        li Браузер - неконтролируемая среда
-        li Чем сложнее код, тем больше ошибок
-        +cover('pictures/browsers.jpg')
+      h2.shout(style="font-size: 120px") Кроссбраузерность
+      div.hashtag #ну_ок
     +slide({header: "", classes: ""})
-      h2.label Как применить?
-      ul
-        li Начни тестировать свой код кроссбраузерно
-        li Да, на реальных девайсах
-        li Загляни в исходники Bootstrap за вдохновением
-      p
-        a(href="https://neesoglasnaja.github.io/moscowcss_11/") Тестирование фронтенда для разработчиков
+      p https://klondike-studio.ru/images/wiki/development/crossbrowsers.jpg
+    +slide({header: "", classes: ""})
+      p https://getbootstrap.com/docs/4.3/getting-started/browsers-devices/
+    +slide({header: "", classes: ""})
+      h2.ask Тестируй код кроссбраузерно
+      a.copyright(href="https://neesoglasnaja.github.io/moscowcss_11/") Тестирование фронтенда для разработчиков
+      div.hashtag #justdoit
+    +slide({header: "", classes: ""})
+      h2.ask Исходники Bootstrap как&nbsp;вдохновение
+      div.hashtag #justdoit
+    +slide({header: "", classes: ""})
+      h2.ask Хочу&nbsp;...&nbsp;от&nbsp;Bootstrap. Как&nbsp;правильно?
+    +slide({header: "", classes: ""})
+      h2.ask А если превратить любой&nbsp;проект в&nbsp;UI&nbsp;библиотеку?
     +slide({header: "", classes: ""})
       +cover('pictures/steal.jpg')
     +slide({header: "", classes: ""})
@@ -287,13 +297,13 @@ html(lang='ru')
       h2(style="margin-top: 250px; text-align: center;") Плохой дизайн сложно превратить в&nbsp;хороший CSS фреймворк
       +cover('pictures/warning.jpg')
     +slide({header: "", classes: ""})
-      h2.label Без UI Kit...
+      h2 Без UI Kit...
       img(src="https://neesoglasnaja.github.io/moscowcss_11/pictures/ui-kit.jpg", width="100%")
     +slide({header: "", classes: ""})
-      h2.label ...всё будет ОЧЕНЬ ПЛОХО
+      h2 ...всё будет ОЧЕНЬ ПЛОХО
       img(src="https://neesoglasnaja.github.io/moscowcss_11/pictures/bad-code-2.jpg", width="100%")
     +slide({header: "", classes: ""})
-      h2.label Из чего состоит Oopstrap
+      h2 Из чего состоит Oopstrap
       ul
         li Код рабочего проекта
         li Документация
@@ -301,38 +311,28 @@ html(lang='ru')
       a.copyright(href="https://css-minsk-js.by") https://css-minsk-js.by
       +cover('pictures/css-minsk-js.jpg')
     +slide({header: "", classes: ""})
-      +cover('pictures/tech.jpg')
-    +slide({header: "", classes: ""})
-      h2.label Проект состоит из...
+      h2 Проект состоит из...
       ul
         li Настроек проекта
         li Глобальных стилей, переменных
-        li Grid system
+        li Макетных сеток и раскладки
         li Типографики и стилей контента
         li Компонентов
-    +slide({header: "", classes: ""})
-      p Простая структура файлов
+    +slide({header: "", classes: "no-page"})
+      +cover('pictures/tech.jpg')
     +slide({header: "", classes: ""})
       a.copyright(href="https://youtu.be/gBgS5Fzhe5c") https://youtu.be/gBgS5Fzhe5c
       +cover('pictures/chernivtsijs.jpg')
     +slide({header: "", classes: ""})
-      h2.label DRY
+      h2(style="margin-top: 250px; text-align: center;") Неструктурированный код сложно в&nbsp;хороший CSS фреймворк
+      +cover('pictures/warning.jpg')
+    +slide({header: "", classes: ""})
+      p Простая структура файлов
+    +slide({header: "", classes: ""})
+      h2 DRY
       +cover('https://neesoglasnaja.github.io/moscowcss_11/pictures/good-code.jpg')
     +slide({header: "", classes: ""})
-      h2.shout(style="font-size: 2em;")
-        a.link.link-github(href="https://github.com/davidhund/styleguide-generators") davidhund/styleguide-generators
-    +slide({header: "", classes: ""})
-      a.copyright(href="https://github.com/morishitter/postcss-style-guide") https://github.com/morishitter/postcss-style-guide
-      +cover('pictures/psg.jpg')
-    +slide({header: "", classes: ""})
-      img(src="https://github.com/morishitter/postcss-style-guide/raw/master/style-guide-default.png")
-    +slide({header: "custom properties", classes: ""})
-      p Более мощный инструмент, чем  переменные препроцессоров
-      р Имеет каскадность и фоллбек
-      p Классный кейс - адаптивные элементы UI kit
-    +slide({header: "", classes: ""})
-      p И нет, переменные это не про то, чтобы не копипастить код
-      p Основная задача переменных - контроль над стилями "темы"
+      p https://wsd.events/2016/10/29/pres/custom-properties/#7
     +slide({header: "layouts & grid", classes: ""})
     +slide({header: "Эра flex", classes: ""})
       p Нужен только класс-контейнер (и то не всегда)
@@ -369,6 +369,14 @@ html(lang='ru')
       p Большинству проектов достаточно парочки таких классов как visibility-hidden, display-none и т.д.
       p А остальное - в утиль. Вот серьезно, зачему 20 классов border, если граница задается один свойством?! 
     +slide({header: "", classes: ""})
+      p.shout(style="font-size: 2em;")
+        a.link.link-github(href="https://github.com/davidhund/styleguide-generators") davidhund/styleguide-generators
+    +slide({header: "", classes: ""})
+      a.copyright(href="https://github.com/morishitter/postcss-style-guide") https://github.com/morishitter/postcss-style-guide
+      +cover('pictures/psg.jpg')
+    +slide({header: "", classes: ""})
+      img(src="https://github.com/morishitter/postcss-style-guide/raw/master/style-guide-default.png")
+    +slide({header: "", classes: ""})
       +cover('pictures/spongebob.jpg')
     +slide({header: "", classes: ""})
       h2.label Вуаля!
@@ -391,9 +399,6 @@ html(lang='ru')
         li Хватит ненавидеть библиотеки "потому что модно"
         li.next Пользуйся инструментами осознанно
         li.next Знай возможности современных CSS, HTML и JS
-    +slide({header: "", classes: "no-page"})
-      a.copyright(href="https://youtu.be/-DvdYLWnPhc") https://youtu.be/-DvdYLWnPhc
-      +cover('pictures/seriozha.jpg')
     +slide({header: "", classes: "no-page"})
       a.copyright(href="https://youtu.be/lDGOK3Iwfnc") https://youtu.be/lDGOK3Iwfnc
       +cover('pictures/seriozha2.jpg')
