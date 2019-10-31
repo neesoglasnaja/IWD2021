@@ -35,17 +35,19 @@ html(lang='ru')
           li Была начальником отдела фронтенда
           li Выгорела и уволилась
           li Счастливая безработная
-        ul.next.no-style(style="position: absolute; background-color: white; top: 164px;")
-          li.empty Верстала еще на таблицах
-          li.empty Была начальником отдела фронтенда
-          li.empty Выгорела и уволилась
-          li.empty(style="text-decoration: line-through") Счастливая безработная
-          li Lead Frontend Developer в Expert Soft
+            +cover('pictures/me.jpg')
+        div.next
+          ul.no-style(style="position: absolute; background-color: white; top: 164px;")
+            li.empty Верстала еще на таблицах
+            li.empty Была начальником отдела фронтенда
+            li.empty Выгорела и уволилась
+            li.empty(style="text-decoration: line-through") Счастливая безработная
+            li Lead Frontend Developer в Expert Soft
+          +cover('pictures/halloween.jpg')
         p(style="margin-top: 100px")
           img.logo(src="pictures/minskcss.png")
           img.logo(src="pictures/minskjs.png")
           img.logo(src="pictures/css-minsk-js.svg", style="background-color: #2b2727; height: 75px")
-      +cover('pictures/me.jpg')
     +slide({header: "", classes: "no-page"})
       +cover('pictures/bootstrap.jpg')
     +slide({header: "", classes: ""})
@@ -70,28 +72,17 @@ html(lang='ru')
       a.copyright(href="http://3d.miu.by/") http://3d.miu.by/
       +cover('pictures/miu.jpg')
     +slide({header: "", classes: "no-page"})
-      +cover('pictures/fine.jpg')
-    +slide({header: "", classes: "no-page"})
       +cover('pictures/best.jpg')
       div.next
         +cover('pictures/best-more.jpg')
     +slide({header: "", classes: "no-page"})
-      +cover('pictures/worst.jpg')
-      div.next
-        +cover('pictures/worst-more.jpg')
+        +cover('pictures/fine.jpg')
     +slide({header: "", classes: "no-page"})
-      p в какой-то момент все поменялось
-    +slide({header: "", classes: "no-page"})
-      h2 Убить Bootstrap
-      p https://www.fourkitchens.com/blog/article/you-dont-need-bootstrap/
-      p https://www.butterfly.com.au/blog/website-development/bootstrap-why-we-dont-use-the-framework-devs-are-raving-about
-      p https://dev.to/teamxenox/do-we-really-need-a-css-framework-4ma6
-      p https://frontendmasters.com/courses/advanced-css-layouts/refactoring-a-grid-system-bootstrap-is-dead/
-      p https://2019.stateofcss.com/technologies/css-frameworks/#bootstrap
-      p https://medium.com/@stasonmars/%D0%BA%D0%B0%D0%BA-%D1%8F-%D0%BF%D0%B5%D1%80%D0%B5%D1%81%D1%82%D0%B0%D0%BB-%D0%B8%D1%81%D0%BF%D0%BE%D0%BB%D1%8C%D0%B7%D0%BE%D0%B2%D0%B0%D1%82%D1%8C-bootstrap-%D0%B2-%D1%83%D0%B3%D0%BE%D0%B4%D1%83-css-grid-3e351e97425f
-      p https://hacks.mozilla.org/2016/04/you-might-not-need-a-css-framework/
-      p http://www.zingdesign.com/5-reasons-not-to-use-twitter-bootstrap/
-      p https://borealis.agency/stopped-using-bootstrap/255
+      img.cover(src="pictures/dont/1.png")
+      img.cover.next(src="pictures/dont/2.png")
+      img.cover.next(src="pictures/dont/5.png")
+      img.cover.next(src="pictures/dont/3.png")
+      img.cover.next(src="pictures/dont/4.png")
     +slide({header: "", classes: ""})
       h2.ask Почему не&nbsp;нужен Bootstrap?
       +cover('pictures/sad.jpg')
@@ -123,14 +114,14 @@ html(lang='ru')
           |   @include button-size($btn-padding-y, $btn-padding-x, 
           |      $btn-font-size, $btn-border-radius);
           | }
-      p https://imgflip.com/s/meme/Jackie-Chan-WTF.jpg
+      +cover('pictures/why.jpg')
     +slide({header: "", classes: "no-page"})
       a.copyright(href="https://youtu.be/-DvdYLWnPhc") https://youtu.be/-DvdYLWnPhc
       +cover('pictures/seriozha.jpg')
     +slide({header: "", classes: "shout"})
       +cover('pictures/crush-kill.jpg')
     +slide({header: "", classes: ""})
-      p пример important который не работает
+      +cover('pictures/important.jpg')
     +slide({header: "", classes: "shout"})
       +cover('pictures/ploho.jpg')
     +slide({header: "", classes: "shout"})
@@ -138,6 +129,8 @@ html(lang='ru')
     +slide({header: "", classes: ""})
       h2.shout Методология наименования
       div.hashtag #плохо
+      div.next
+        +cover('pictures/no.png')
     +slide({header: "", classes: ""})
       p пример классов в разметке
     +slide({header: "", classes: ""})
@@ -146,6 +139,8 @@ html(lang='ru')
     +slide({header: "", classes: ""})
       h2.shout jQuery
       div.hashtag #плохо
+    +slide({header: "", classes: ""})
+      p война браузеров
     +slide({header: "", classes: ""})
       a.copyright(href="https://blog.getbootstrap.com/2019/02/11/bootstrap-4-3-0/") .В 5 версии не будет. Работа идет
       +cover('pictures/forgive.jpg')
@@ -156,10 +151,12 @@ html(lang='ru')
       +cover('pictures/themeforest.jpg')
     +slide({header: "", classes: "no-page"})
       +cover('pictures/spotify.jpg')
+    +slide({header: "", classes: "no-page"})
+      +cover('pictures/npm.jpg')
     +slide({header: "", classes: ""})
       h2 Почему Bootstrap
       ul
-        li Просто, быстро и удобно копипастить - хорошие доки
+        li Просто, быстро и удобно копипастить
         li.next Большой набор базовых компонентов
         li.next Выглядит презентабельно из коробки
         li.next Только HTML, CSS и JavaScript (jQuery)
@@ -246,6 +243,7 @@ html(lang='ru')
       +cover('pictures/grids.jpg')
     +slide({header: "", classes: ""})
       h2.ask Расскажи дизайнеру о&nbsp;сетках
+      div.hashtag #justdoit
     +slide({header: "", classes: ""})
       h2.shout RWD и MF
       div.hashatag #ну_ok
@@ -253,9 +251,9 @@ html(lang='ru')
       span.next
         +cover('pictures/captain.jpg')
     +slide({header: "", classes: ""})
-        +cover('pictures/rwd.jpg')
+      +cover('pictures/rwd.jpg')
     +slide({header: "", classes: ""})
-      p https://gs.statcounter.com/platform-market-share/desktop-mobile-tablet
+      +cover('pictures/mobile.jpg')
     +slide({header: "", classes: ""})
       h2 Mobile First и Desktop First
       pre
@@ -275,24 +273,43 @@ html(lang='ru')
       h2.shout(style="font-size: 120px") Кроссбраузерность
       div.hashtag #ну_ок
     +slide({header: "", classes: ""})
-      p https://klondike-studio.ru/images/wiki/development/crossbrowsers.jpg
+      +cover('pictures/war.jpg')
     +slide({header: "", classes: ""})
-      p https://getbootstrap.com/docs/4.3/getting-started/browsers-devices/
+      a.copyright(href="https://getbootstrap.com/docs/4.3/getting-started/browsers-devices/") Browsers and devices
+      +cover('pictures/support.jpg')
     +slide({header: "", classes: ""})
       h2.ask Тестируй код кроссбраузерно
       a.copyright(href="https://neesoglasnaja.github.io/moscowcss_11/") Тестирование фронтенда для разработчиков
       div.hashtag #justdoit
     +slide({header: "", classes: ""})
+      h2.ask Хочу&nbsp;...&nbsp;от&nbsp;Bootstrap. Как&nbsp;правильно?
+      +cover('pictures/philosoraptor.jpg')
+    +slide({header: "", classes: ""})
+      +cover('pictures/sass.jpg')
+    +slide({header: "", classes: ""})
+      pre
+        code.css
+          | /* Required */
+          | @import "../node_modules/bootstrap/scss/functions";
+          | @import "../node_modules/bootstrap/scss/variables";
+          | @import "../node_modules/bootstrap/scss/mixins";
+      pre.next
+        code.css
+          |/* Optional */
+          | @import "../node_modules/bootstrap/scss/type";
+          | @import "../node_modules/bootstrap/scss/images";
+          | @import "../node_modules/bootstrap/scss/grid";
+          | ...
+    +slide({header: "", classes: ""})
       h2.ask Исходники Bootstrap как&nbsp;вдохновение
       div.hashtag #justdoit
     +slide({header: "", classes: ""})
-      h2.ask Хочу&nbsp;...&nbsp;от&nbsp;Bootstrap. Как&nbsp;правильно?
+      +cover('pictures/deeper.jpg')
     +slide({header: "", classes: ""})
       h2.ask А если превратить любой&nbsp;проект в&nbsp;UI&nbsp;библиотеку?
+      +cover('pictures/philosoraptor.jpg')
     +slide({header: "", classes: ""})
       +cover('pictures/steal.jpg')
-    +slide({header: "", classes: ""})
-      +cover('pictures/oopstrap.jpg')
     +slide({header: "", classes: ""})
       h2(style="margin-top: 250px; text-align: center;") Плохой дизайн сложно превратить в&nbsp;хороший CSS фреймворк
       +cover('pictures/warning.jpg')
@@ -302,12 +319,7 @@ html(lang='ru')
     +slide({header: "", classes: ""})
       h2 ...всё будет ОЧЕНЬ ПЛОХО
       img(src="https://neesoglasnaja.github.io/moscowcss_11/pictures/bad-code-2.jpg", width="100%")
-    +slide({header: "", classes: ""})
-      h2 Из чего состоит Oopstrap
-      ul
-        li Код рабочего проекта
-        li Документация
-    +slide({header: "", classes: ""})
+    +slide({header: "", classes: "no-page"})
       a.copyright(href="https://css-minsk-js.by") https://css-minsk-js.by
       +cover('pictures/css-minsk-js.jpg')
     +slide({header: "", classes: ""})
@@ -327,16 +339,25 @@ html(lang='ru')
       h2(style="margin-top: 250px; text-align: center;") Неструктурированный код сложно превратить в&nbsp;хороший CSS фреймворк
       +cover('pictures/warning.jpg')
     +slide({header: "", classes: ""})
-      p Простая структура файлов
+      h2 Компоненты CSS-Minsk-JS
+      ol
+        li Кнопки
+        li Текст
+        li Заголовки
+        li Карточки спикеров
+        li Изображения в сетке
+        li Страницы спикеров
+        li ...
     +slide({header: "", classes: ""})
       h2 DRY
       +cover('https://neesoglasnaja.github.io/moscowcss_11/pictures/good-code.jpg')
     +slide({header: "", classes: ""})
       h2 Почему Custom Properties?
       ul
-        li Существуют в runtime и дступны для изменения
+        li Существуют в runtime и доступны для изменения
         li Ограничены областью видимости DOM элемента
         li Наследуются вложенными элементами от родителя
+        li Возможность делать fallback
         li Отличная поддержка в 2019 году
       a.copyright(href="https://wsd.events/2016/10/29/pres/custom-properties") Пользовательские свойства как основа архитектуры CSS, Павел Ловцевич
     +slide({header: "", classes: ""})
@@ -361,14 +382,14 @@ html(lang='ru')
       div.hashtag #justdoit
       a.copyright(href="https://github.com/lovata/aweCSSome/blob/master/common.blocks/grid/grid.css") AweCSSome Grid Framework
       +cover('pictures/awecssome-grid.jpg')
-    +slide({header: "Типографика и контент", classes: ""})
-      p Воруй как художник, если дизайнер это еще не сделал за тебя
-      p Тулзы для подбора типографики
-      p Можно и вертикальный ритм подключить, это не сложно
     +slide({header: "responsive images", classes: ""})
+      h2 Responsive Images
       p В Bootstrap есть поддержка тега picture - это круто
       p Но ничего не говорится от src-set, т.е. об адаптивных изображениях
       р А это классная техника уменьшения трафика пользователя
+    +slide({header: "", classes: "no-page"})
+      h2.ask Экономь трафик пользователя
+      div.hashtag #justdoit
     +slide({header: "Компоненты", classes: ""})
       p Неужто сложно наверстать такие компоненты как...
       p Alerts, Badges, Buttons, Progress, Spinners и еще несколько десятков такой же ерунды?
@@ -396,6 +417,8 @@ html(lang='ru')
     +slide({header: "", classes: ""})
       +cover('pictures/spongebob.jpg')
     +slide({header: "", classes: ""})
+      +cover('pictures/oopstrap.jpg')
+    +slide({header: "", classes: ""})
       h2 Вуаля!
       ul
         li CSS библиотека, заточенная под конкретный проект
@@ -410,6 +433,7 @@ html(lang='ru')
         li.next Нет дизайна
         li.next Вы не умеете верстать
         li.next Просто лень
+      +cover('pictures/philosoraptor.jpg')
     +slide({header: "", classes: ""})
       h2 Подводя итог
       ul
@@ -418,13 +442,13 @@ html(lang='ru')
         li.next Знай возможности современных CSS, HTML и JS
         li.next Не переставай учиться
     +slide({name: 'theend', header: "", classes: ''})
-      p.end-link(style="position: absolute; bottom: 5%; background-color: #1b1b1b")
+      p.end-link(style="position: absolute; bottom: 5%; color: #fff")
         a.bigger(href="http://bit.ly/" target="_blank") bit.ly/
         br
         | Александра Шинкевич (
         a(href='https://twitter.com/neesoglasnaja' target="_blank") @neesoglasnaja
         | )
-      img.cover(src='pictures/end.jpg')
+      img.cover(src='pictures/the_end.gif', style="width: 100%")
 
     .progress
     script(src='shower/shower.min.js')
