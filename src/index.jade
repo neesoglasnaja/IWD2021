@@ -132,7 +132,7 @@ html(lang='ru')
       div.next
         +cover('pictures/no.png')
     +slide({header: "", classes: ""})
-      p пример классов в разметке
+      +cover('pictures/atomic.jpg')
     +slide({header: "", classes: ""})
       a.copyright(href="https://2019.stateofcss.com/technologies/methodologies/#methodologies-experience-heatmap") State of CSS #methodologies
       +cover('pictures/bem.jpg')
@@ -140,7 +140,7 @@ html(lang='ru')
       h2.shout jQuery
       div.hashtag #плохо
     +slide({header: "", classes: ""})
-      p война браузеров
+      +cover('pictures/ie.jpg')
     +slide({header: "", classes: ""})
       a.copyright(href="https://blog.getbootstrap.com/2019/02/11/bootstrap-4-3-0/") .В 5 версии не будет. Работа идет
       +cover('pictures/forgive.jpg')
@@ -176,12 +176,12 @@ html(lang='ru')
       h2.ask Что хорошо в&nbsp;Bootstrap?
       +cover('pictures/good.jpg')
     +slide({header: "", classes: ""})
-      +cover('pictures/gif/lol.webp')
+      img.cover(src="pictures/gif/lol.webp", style="height: 100%")
       div.next 
-        +cover('http://m.quickmeme.com/img/36/3693b256459380487160651bb6c2645b35caa5d4f917514ce9a1599dc1b031fe.jpg')
+        +cover('pictures/serious.jpg')
     +slide({header: "", classes: ""})
       h2.shout Типографика
-      div.hashtag #ну_ok
+      div.hashtag #ну_ок
     +slide({header: "", classes: ""})
       h2 Типографика
       p UI kit по заголовкам и текстовым стилям
@@ -246,10 +246,12 @@ html(lang='ru')
       div.hashtag #justdoit
     +slide({header: "", classes: ""})
       h2.shout RWD и MF
-      div.hashatag #ну_ok
+      div.hashatag #ну_ок
       p(style="margin-top: 320px; text-align: center") *Responsive Web Design и Mobile First
       span.next
         +cover('pictures/captain.jpg')
+    +slide({header: "", classes: ""})
+      +cover('pictures/adaptive.jpg')
     +slide({header: "", classes: ""})
       +cover('pictures/rwd.jpg')
     +slide({header: "", classes: ""})
@@ -265,7 +267,8 @@ html(lang='ru')
           | /* Desktop First */
           | @media (max-width: ...) { ... }
     +slide({header: "", classes: ""})
-      p https://habr.com/ru/post/473186/
+      a.copyright(href="https://habr.com/ru/post/473186/") Расстановка элементов без media-запросов
+      +cover('pictures/flex.jpg')
     +slide({header: "", classes: ""})
       h2.ask Начни делать Mobile First!
       div.hashtag #justdoit
@@ -301,7 +304,7 @@ html(lang='ru')
           | @import "../node_modules/bootstrap/scss/grid";
           | ...
     +slide({header: "", classes: ""})
-      h2.ask Исходники Bootstrap как&nbsp;вдохновение
+      h2.ask(style="width: 80%") Исходники Bootstrap как&nbsp;вдохновение
       div.hashtag #justdoit
     +slide({header: "", classes: ""})
       +cover('pictures/deeper.jpg')
@@ -315,10 +318,10 @@ html(lang='ru')
       +cover('pictures/warning.jpg')
     +slide({header: "", classes: ""})
       h2 Без UI Kit...
-      img(src="https://neesoglasnaja.github.io/moscowcss_11/pictures/ui-kit.jpg", width="100%")
+      img(src="pictures/ui-kit.jpg", width="100%")
     +slide({header: "", classes: ""})
       h2 ...всё будет ОЧЕНЬ ПЛОХО
-      img(src="https://neesoglasnaja.github.io/moscowcss_11/pictures/bad-code-2.jpg", width="100%")
+      img(src="pictures/bad-code-2.jpg", width="100%")
     +slide({header: "", classes: "no-page"})
       a.copyright(href="https://css-minsk-js.by") https://css-minsk-js.by
       +cover('pictures/css-minsk-js.jpg')
@@ -338,19 +341,23 @@ html(lang='ru')
     +slide({header: "", classes: ""})
       h2(style="margin-top: 250px; text-align: center;") Неструктурированный код сложно превратить в&nbsp;хороший CSS фреймворк
       +cover('pictures/warning.jpg')
-    +slide({header: "", classes: ""})
-      h2 Компоненты CSS-Minsk-JS
+    +slide({header: "", classes: "no-page"})
+      h2 Компоненты
       ol
         li Кнопки
-        li Текст
-        li Заголовки
-        li Карточки спикеров
-        li Изображения в сетке
-        li Страницы спикеров
-        li ...
+          +cover('pictures/buttons.jpg')
+        li.next Заголовки и текст
+          +cover('pictures/text.jpg')
+        li.next Изображения в сетке
+          +cover('pictures/img-grid.jpg')
+        li.next Карточки спикеров
+          +cover('pictures/card.jpg')
+        li.next Страницы спикеров
+          +cover('pictures/speaker.jpg')
+        li.next ...
     +slide({header: "", classes: ""})
       h2 DRY
-      +cover('https://neesoglasnaja.github.io/moscowcss_11/pictures/good-code.jpg')
+      +cover('pictures/good-code.jpg')
     +slide({header: "", classes: ""})
       h2 Почему Custom Properties?
       ul
@@ -382,30 +389,43 @@ html(lang='ru')
       div.hashtag #justdoit
       a.copyright(href="https://github.com/lovata/aweCSSome/blob/master/common.blocks/grid/grid.css") AweCSSome Grid Framework
       +cover('pictures/awecssome-grid.jpg')
-    +slide({header: "responsive images", classes: ""})
+    +slide({header: "", classes: ""})
       h2 Responsive Images
-      p В Bootstrap есть поддержка тега picture - это круто
-      p Но ничего не говорится от src-set, т.е. об адаптивных изображениях
-      р А это классная техника уменьшения трафика пользователя
+      pre
+        code.html
+          | &#x3C;picture&#x3E;
+          |   &#x3C;source srcset=&#x22;...&#x22; type=&#x22;image/svg+xml&#x22;&#x3E;
+          |   &#x3C;img src=&#x22;...&#x22; class=&#x22;img-fluid img-thumbnail&#x22; alt=&#x22;...&#x22;&#x3E;
+          | &#x3C;/picture&#x3E;
+    +slide({header: "", classes: ""})
+      h2 srcset
+      pre
+        code.html
+          | &#x3C;img srcset=&#x22;img-320w.jpg 320w,
+          |             img-480w.jpg 480w,
+          |             img-800w.jpg 800w&#x22;
+          |     sizes=&#x22;(max-width: 320px) 280px,
+          |            (max-width: 480px) 440px,
+          |            800px&#x22;
+          |     src=&#x22;img-800w.jpg&#x22; alt=&#x22;...&#x22;&#x3E;
+    +slide({header: "", classes: "no-page"})
+      img.cover(src="pictures/gif/images.gif", style="width: 100%;")
+      //- +cover('pictures/gif/images.gif')
     +slide({header: "", classes: "no-page"})
       h2.ask Экономь трафик пользователя
       div.hashtag #justdoit
-    +slide({header: "Компоненты", classes: ""})
-      p Неужто сложно наверстать такие компоненты как...
-      p Alerts, Badges, Buttons, Progress, Spinners и еще несколько десятков такой же ерунды?
-    +slide({header: "А что про JS компоненты?", classes: ""})
-      p Камон, ну что мало ли каруселек без jQuery, с a11y?
-      p В редких проектах нужнен весь список доступных JS компонентов Bootstrap
-      p А если и так, то они часто выглядят отнюдь не так, как в популярном фреймворке
-    +slide({header: "dialog", classes: ""})
-      р Полноценные модальный элемент
-      p Пока сложно использовать из-за низкой поддержки https://caniuse.com/#feat=dialog
-      р Доклад Ани Селезневой https://www.youtube.com/watch?v=s6PI8pKQxgo
-    +slide({header: "Утилитарные класы", classes: ""})
-      p Ресеты стилей
-      p Простой повторяющийся код вынесен в переменные еще несколько этапов назад
-      p Большинству проектов достаточно парочки таких классов как visibility-hidden, display-none и т.д.
-      p А остальное - в утиль. Вот серьезно, зачему 20 классов border, если граница задается один свойством?! 
+    +slide({header: "", classes: ""})
+      +cover('pictures/owl.jpg')
+    //- +slide({header: "", classes: ""})
+    //-   h2.ask А если очень хочется в&nbsp;JavaScript?
+    //-   +cover('pictures/philosoraptor.jpg')
+    //- +slide({header: "А что про JS компоненты?", classes: ""})
+    //-   p Камон, ну что мало ли каруселек без jQuery, с a11y?
+    //-   p В редких проектах нужнен весь список доступных JS компонентов Bootstrap
+    //-   p А если и так, то они часто выглядят отнюдь не так, как в популярном фреймворке
+    +slide({header: "", classes: ""})
+      h2.ask А если на проект приходит новый разработчик?
+      +cover('pictures/philosoraptor.jpg')
     +slide({header: "", classes: ""})
       p.shout(style="font-size: 2em;")
         a.link.link-github(href="https://github.com/davidhund/styleguide-generators") davidhund/styleguide-generators
@@ -413,7 +433,33 @@ html(lang='ru')
       a.copyright(href="https://github.com/morishitter/postcss-style-guide") https://github.com/morishitter/postcss-style-guide
       +cover('pictures/psg.jpg')
     +slide({header: "", classes: ""})
-      img(src="https://github.com/morishitter/postcss-style-guide/raw/master/style-guide-default.png")
+      pre
+        code.js
+          | postcss([
+          |   ...,
+          |   styleGuide({
+          |       project: 'Project name',
+          |       dest: 'styleguide/index.html',
+          |       showCode: false,
+          |       themePath: '../'
+          |   }),
+          |   ...
+          | ])
+    
+    +slide({header: "", classes: ""})
+      pre
+        code.css
+          | /* @styleguide
+          |    @title Button
+          |    Use the button classes on ...
+          |    &#x3C;button class=&#x22;button button--large&#x22;&#x3E;Large Button&#x3C;/button&#x3E;
+          |      &#x3C;button class=&#x22;button button--large&#x22;&#x3E;Large Button&#x3C;/button&#x3E;
+          | */
+          | .button {
+          |    /* ... */
+          | }
+    +slide({header: "", classes: ""})
+      img.cover(src="pictures/psg-demo.jpg")
     +slide({header: "", classes: ""})
       +cover('pictures/spongebob.jpg')
     +slide({header: "", classes: ""})
