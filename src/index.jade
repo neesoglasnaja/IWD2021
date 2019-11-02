@@ -122,18 +122,18 @@ html(lang='ru')
       +cover('pictures/crush-kill.jpg')
     +slide({header: "", classes: ""})
       +cover('pictures/important.jpg')
-    +slide({header: "", classes: "shout"})
+    +slide({header: "", classes: "no-page"})
       +cover('pictures/ploho.jpg')
     +slide({header: "", classes: "shout"})
       +cover('pictures/custom.jpg')
-    +slide({header: "", classes: ""})
+    +slide({header: "", classes: "no-page"})
       h2.shout Методология наименования
       div.hashtag #плохо
       div.next
         +cover('pictures/no.png')
     +slide({header: "", classes: ""})
       +cover('pictures/atomic.jpg')
-    +slide({header: "", classes: ""})
+    +slide({header: "", classes: "no-page"})
       a.copyright(href="https://2019.stateofcss.com/technologies/methodologies/#methodologies-experience-heatmap") State of CSS #methodologies
       +cover('pictures/bem.jpg')
     +slide({header: "", classes: ""})
@@ -175,14 +175,14 @@ html(lang='ru')
     +slide({header: "", classes: ""})
       h2.ask Что хорошо в&nbsp;Bootstrap?
       +cover('pictures/good.jpg')
-    +slide({header: "", classes: ""})
+    +slide({header: "", classes: "no-page"})
       img.cover(src="pictures/gif/lol.webp", style="height: 100%")
       div.next 
         +cover('pictures/serious.jpg')
     +slide({header: "", classes: ""})
       h2.shout Типографика
       div.hashtag #ну_ок
-    +slide({header: "", classes: ""})
+    +slide({header: "", classes: "no-page"})
       h2 Типографика
       p UI kit по заголовкам и текстовым стилям
       ul
@@ -241,7 +241,7 @@ html(lang='ru')
         br
         | визуальный&nbsp;порядок
       //- +cover('pictures/grids1.jpg')
-    +slide({header: "", classes: ""})
+    +slide({header: "", classes: "no-page"})
       +cover('pictures/grids.jpg')
     +slide({header: "", classes: ""})
       h2.ask Расскажи дизайнеру о&nbsp;сетках
@@ -252,9 +252,9 @@ html(lang='ru')
       p(style="margin-top: 320px; text-align: center") *Responsive Web Design и Mobile First
       span.next
         +cover('pictures/captain.jpg')
-    +slide({header: "", classes: ""})
+    +slide({header: "", classes: "no-page"})
       +cover('pictures/adaptive.jpg')
-    +slide({header: "", classes: ""})
+    +slide({header: "", classes: "no-page"})
       +cover('pictures/rwd.jpg')
     +slide({header: "", classes: ""})
       +cover('pictures/mobile.jpg')
@@ -268,7 +268,7 @@ html(lang='ru')
         code.css
           | /* Desktop First */
           | @media (max-width: ...) { ... }
-    +slide({header: "", classes: ""})
+    +slide({header: "", classes: "no-page"})
       a.copyright(href="https://habr.com/ru/post/473186/") Расстановка элементов без media-запросов
       +cover('pictures/flex.jpg')
     +slide({header: "", classes: ""})
@@ -287,7 +287,7 @@ html(lang='ru')
       a.copyright(href="https://neesoglasnaja.github.io/moscowcss_11/") Тестирование фронтенда для разработчиков
       div.hashtag #justdoit
     +slide({header: "", classes: ""})
-      h2.ask Хочу&nbsp;...&nbsp;от&nbsp;Bootstrap. Как&nbsp;правильно?
+      h2.ask(style="width: 80%") Хочу&nbsp;___&nbsp;от&nbsp;Bootstrap. Как&nbsp;правильно?
       +cover('pictures/philosoraptor.jpg')
     +slide({header: "", classes: ""})
       +cover('pictures/sass.jpg')
@@ -308,7 +308,7 @@ html(lang='ru')
     +slide({header: "", classes: ""})
       h2.ask(style="width: 80%") Исходники Bootstrap как&nbsp;вдохновение
       div.hashtag #justdoit
-    +slide({header: "", classes: ""})
+    +slide({header: "", classes: "no-page"})
       +cover('pictures/deeper.jpg')
     +slide({header: "", classes: ""})
       h2.ask А если превратить любой&nbsp;проект в&nbsp;UI&nbsp;библиотеку?
@@ -331,13 +331,13 @@ html(lang='ru')
       h2 Проект состоит из...
       ul
         li Настроек проекта
-        li Глобальных стилей, переменных
-        li Макетных сеток и раскладки
-        li Типографики и стилей контента
-        li Компонентов
+        li.next Глобальных стилей, переменных
+        li.next Макетных сеток и раскладки
+        li.next Типографики и стилей контента
+        li.next Компонентов
     +slide({header: "", classes: "no-page"})
       +cover('pictures/tech.jpg')
-    +slide({header: "", classes: ""})
+    +slide({header: "", classes: "no-page"})
       a.copyright(href="https://youtu.be/gBgS5Fzhe5c") https://youtu.be/gBgS5Fzhe5c
       +cover('pictures/chernivtsijs.jpg')
     +slide({header: "", classes: ""})
@@ -357,22 +357,22 @@ html(lang='ru')
         li.next Страницы спикеров
           +cover('pictures/speaker.jpg')
         li.next ...
-    +slide({header: "", classes: ""})
+    +slide({header: "", classes: "no-page"})
       h2 DRY
       +cover('pictures/good-code.jpg')
     +slide({header: "", classes: ""})
       h2 Почему Custom Properties?
       ul
         li Существуют в runtime и доступны для изменения
-        li Ограничены областью видимости DOM элемента
-        li Наследуются вложенными элементами от родителя
-        li Возможность делать fallback
-        li Отличная поддержка в 2019 году
+        li.next Ограничены областью видимости DOM элемента
+        li.next Наследуются вложенными элементами от родителя
+        li.next Возможность делать fallback
+        li.next Отличная поддержка в 2019 году
       a.copyright(href="https://wsd.events/2016/10/29/pres/custom-properties") Пользовательские свойства как основа архитектуры CSS, Павел Ловцевич
     +slide({header: "", classes: ""})
       a.copyright(href="https://caniuse.com/#feat=css-variables") https://caniuse.com/#feat=css-variables
       +cover('pictures/caniuse-cp.jpg')
-    +slide({header: "", classes: ""})
+    +slide({header: "", classes: "no-page"})
       +cover('pictures/grid.jpg')
     +slide({header: "", classes: ""})
       a.copyright(href="https://caniuse.com/#feat=css-grid") https://caniuse.com/#feat=css-grid
@@ -460,24 +460,24 @@ html(lang='ru')
           | .button {
           |    /* ... */
           | }
-    +slide({header: "", classes: ""})
+    +slide({header: "", classes: "no-page"})
       img.cover(src="pictures/psg-demo.jpg")
-    +slide({header: "", classes: ""})
+    +slide({header: "", classes: "no-page"})
       +cover('pictures/spongebob.jpg')
-    +slide({header: "", classes: ""})
+    +slide({header: "", classes: "no-page"})
       +cover('pictures/oopstrap.jpg')
     +slide({header: "", classes: ""})
       h2 Вуаля!
       ul
-        li CSS библиотека, заточенная под конкретный проект
-        li Со встроенной документацией
-        li С конкретными примерами компонентов конкретного проекта
-        li Сторонние библиотеки не запрещены
+        li CSS библиотека под конкретный проект
+        li.next Со встроенной документацией
+        li.next С конкретными примерами компонентов конкретного проекта
+        li.next Сторонние библиотеки не запрещены
     +slide({header: "", classes: ""})
       h2 Когда брать чужое?
       ul
         li Разрабатывается быстрый прототип
-        li.next Дизайн "заточен" под выбранную UI библиотеку
+        li.next Дизайн «заточен» под выбранную UI библиотеку
         li.next Нет дизайна
         li.next Вы не умеете верстать
         li.next Просто лень
@@ -485,16 +485,16 @@ html(lang='ru')
     +slide({header: "", classes: ""})
       h2 Подводя итог
       ul
-        li Хватит ненавидеть библиотеки "потому что модно"
+        li Хватит ненавидеть библиотеки «потому что модно»
         li.next Пользуйся инструментами осознанно
         li.next Знай возможности современных CSS, HTML и JS
         li.next Не переставай учиться
     +slide({name: 'theend', header: "", classes: ''})
       p.end-link(style="position: absolute; bottom: 5%; color: #fff")
-        a.bigger(href="http://bit.ly/" target="_blank") bit.ly/
+        a.bigger(href="http://bit.ly/lvivcss-ymnnb" target="_blank" style="color:white") bit.ly/lvivcss-ymnnb
         br
         | Александра Шинкевич (
-        a(href='https://twitter.com/neesoglasnaja' target="_blank") @neesoglasnaja
+        a(href='https://twitter.com/neesoglasnaja' target="_blank" style="color: white") @neesoglasnaja
         | )
       img.cover(src='pictures/the_end.gif', style="width: 100%")
 
