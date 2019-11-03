@@ -111,7 +111,7 @@ html(lang='ru')
           | .btn {
           |   /* ... */
           |   cursor: if($enable-pointer-cursor-for-buttons, pointer, null);
-          |   @include button-size($btn-padding-y, $btn-padding-x, 
+          |   @include button-size($btn-padding-y, $btn-padding-x,
           |      $btn-font-size, $btn-border-radius);
           | }
       +cover('pictures/why.jpg')
@@ -177,7 +177,7 @@ html(lang='ru')
       +cover('pictures/good.jpg')
     +slide({header: "", classes: "no-page"})
       img.cover(src="pictures/gif/lol.webp", style="height: 100%")
-      div.next 
+      div.next
         +cover('pictures/serious.jpg')
     +slide({header: "", classes: ""})
       h2.shout Типографика
@@ -380,9 +380,9 @@ html(lang='ru')
     +slide({header: "", classes: "no-page"})
       h2 Сетка Bootstrap
       ul
-        li 10 файлов Sass с 
+        li 10 файлов Sass с
           code @mixin
-          |  и 
+          |  и
           code @extend
         li Много условий и логики
       +cover('pictures/bootstrap-grid.jpg')
@@ -411,7 +411,7 @@ html(lang='ru')
           |            800px&#x22;
           |     src=&#x22;img-800w.jpg&#x22; alt=&#x22;...&#x22;&#x3E;
     +slide({header: "", classes: "no-page"})
-      img.cover(src="pictures/gif/images.gif", style="width: 100%;")
+      video.cover.width(src="pictures/gif/images.mp4", loop, muted, playsinline, autoplay)
       //- +cover('pictures/gif/images.gif')
     +slide({header: "", classes: "no-page"})
       h2.ask Экономь трафик пользователя
@@ -447,7 +447,7 @@ html(lang='ru')
           |   }),
           |   ...
           | ])
-    
+
     +slide({header: "", classes: ""})
       pre
         code.css
