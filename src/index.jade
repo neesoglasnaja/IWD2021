@@ -20,42 +20,37 @@ html(lang='ru')
     header.caption
       h1 !{title}
     +slide({name: 'cover', classes:'cover'})
-      h2.label(style="margin-top: 50px;") Тебе не нужен Bootstrap!
-      p.next(style="font-size: 2em") Или нужен?
-        span.next  Или все же не нужен?
-      p(style="opacity: 0.8; margin-top: 155px") Александра Шинкевич
+      h2.label(style="margin-top: 50px; font-size: 3.2em;") Тебе не нужен Bootstrap!
+      p.next(style="font-size: 2em; color: white; padding-left: 10px") Или нужен?
+        span.next  Или всё же не нужен?
+      img(src="pictures/iwd-logotype.webp" style="position:absolute; bottom: 60px; left: 60px; width: 250px; min-width: auto; min-height: auto;")
+      p(style="margin-top: 95px; color: white; width: 50%; margin-left: 50%; font-size: 32px; line-height: 1") Александра Шинкевич
         br
-        a(href='https://twitter.com/neesoglasnaja' target="_blank") @neesoglasnaja
+        a(href='https://twitter.com/neesoglasnaja' target="_blank" style="color: white; font-size: 20px") @neesoglasnaja
       +cover('pictures/cover.jpg')
     +slide({header: "", classes: ""})
       div(style="margin-left: 50%; width: 60%; margin-top: 0px")
         h2.label Кто я?
         ul
-          li Верстала еще на таблицах
+          li Верстала ещё на таблицах
           li Была начальником отдела фронтенда
-          li Выгорела и уволилась
+          li Выгорела и уволилась (дважды)
           li Счастливая безработная
             +cover('pictures/me.jpg')
-        div.next
-          ul.no-style(style="position: absolute; background-color: white; top: 164px;")
-            li.empty Верстала еще на таблицах
-            li.empty Была начальником отдела фронтенда
-            li.empty Выгорела и уволилась
-            li.empty(style="text-decoration: line-through") Счастливая безработная
-            li Lead Frontend Developer в Expert Soft
-          +cover('pictures/halloween.jpg')
-        p(style="margin-top: 100px")
+        p(style="margin-top: 100px; display: flex; align-items: center")
           img.logo(src="pictures/minskcss.png")
-          img.logo(src="pictures/minskjs.png")
-          img.logo(src="pictures/css-minsk-js.svg", style="background-color: #2b2727; height: 75px")
+          img.logo(src="pictures/minskjs.png", style="width: 75px; padding-left: 0; padding-right: 0;")
+          img.logo(src="pictures/css-minsk-js.svg", style="background-color: #2b2727; height: 65px; width: 70px")
+          img.logo(src="pictures/fc.png", style="height: 75px")
     +slide({header: "", classes: "no-page"})
-      +cover('pictures/bootstrap.jpg')
+      +cover('pictures/bootstrap.svg')
     +slide({header: "", classes: ""})
-      h2 Bootstrap - это...
+      h2 Bootstrap — это...
       ul
         li Библиотека компонентов
         li.next CSS фреймворк
         li.next UI библиотека
+      +cover('pictures/example.jpg')
     +slide({header: "", classes: "no-page"})
       +cover('pictures/story.jpg')
     +slide({header: "", classes: "no-page"})
@@ -119,9 +114,18 @@ html(lang='ru')
       a.copyright(href="https://youtu.be/-DvdYLWnPhc") https://youtu.be/-DvdYLWnPhc
       +cover('pictures/seriozha.jpg')
     +slide({header: "", classes: "shout"})
+      +cover('pictures/customize1.jpg')
+      div.next
+        +cover('pictures/customize2.jpg')
+      div.next
+        +cover('pictures/rambo.jpg')
+      a.copyright(href="https://getbootstrap.com/docs/5.0/customize/css-variables/") Customize CSS Variables
+    +slide({header: "", classes: "shout"})
       +cover('pictures/crush-kill.jpg')
     +slide({header: "", classes: ""})
       +cover('pictures/important.jpg')
+      div.next
+        img.cover(src='pictures/important2.png', style="width: 95%; border: 3px solid red")
     +slide({header: "", classes: "no-page"})
       +cover('pictures/ploho.jpg')
     +slide({header: "", classes: "shout"})
@@ -142,17 +146,22 @@ html(lang='ru')
     +slide({header: "", classes: ""})
       +cover('pictures/ie.jpg')
     +slide({header: "", classes: ""})
-      a.copyright(href="https://blog.getbootstrap.com/2019/02/11/bootstrap-4-3-0/") В 5 версии не будет. Работа идет
-      +cover('pictures/forgive.jpg')
+      a.copyright(href="https://getbootstrap.com/docs/5.0/migration/#javascript-2") В 5 версии избавились
+      +cover('pictures/jquery.jpg')
     +slide({header: "", classes: ""})
-      h2.ask Использовать Bootstrap в&nbsp;2019?
+      a.copyright(href="https://getbootstrap.com/docs/5.0/getting-started/browsers-devices/#internet-explorer") Поддержка браузеров и устройств Bootstrap 5. Internet Explorer
+      +cover('pictures/ie_support.jpg')
+    +slide({header: "", classes: ""})
+      h2.ask Использовать Bootstrap в&nbsp;2021?
       +cover('pictures/philosoraptor.jpg')
     +slide({header: "", classes: "no-page"})
       +cover('pictures/themeforest.jpg')
     +slide({header: "", classes: "no-page"})
-      +cover('pictures/spotify.jpg')
-    +slide({header: "", classes: "no-page"})
       +cover('pictures/npm.jpg')
+      a.copyright(href="https://getbootstrap.com/docs/5.0/getting-started/browsers-devices/#internet-explorer") Bootstrap в NPM
+    +slide({header: "", classes: "no-page"})
+      +cover('pictures/trends.jpg')
+      a.copyright(href="https://www.npmtrends.com/bootstrap") NPM Trends: Bootstrap
     +slide({header: "", classes: ""})
       h2 Почему Bootstrap
       ul
@@ -221,12 +230,15 @@ html(lang='ru')
       h2.shout a11y
       div.hashtag #ну_ок
     +slide({header: "", classes: ""})
+      +cover('pictures/ally.jpg')
+    +slide({header: "", classes: ""})
       +cover('pictures/a11y.jpg')
     +slide({header: "", classes: ""})
       h2.ask Верстай
         br
         | доступно
       div.hashtag #justdoit
+      +cover('pictures/a11y_do.jpg')
     +slide({header: "", classes: ""})
       h2.shout Макетные сетки
       div.hashtag #ну_ок
@@ -258,6 +270,7 @@ html(lang='ru')
       +cover('pictures/rwd.jpg')
     +slide({header: "", classes: ""})
       +cover('pictures/mobile.jpg')
+      a.copyright(href="https://gs.statcounter.com/platform-market-share/desktop-mobile-tablet/worldwide") Статистика использования устройств
     +slide({header: "", classes: ""})
       h2 Mobile First и Desktop First
       pre
@@ -280,11 +293,13 @@ html(lang='ru')
     +slide({header: "", classes: ""})
       +cover('pictures/war.jpg')
     +slide({header: "", classes: ""})
-      a.copyright(href="https://getbootstrap.com/docs/4.3/getting-started/browsers-devices/") Browsers and devices
+      a.copyright(href="https://getbootstrap.com/docs/5.0/getting-started/browsers-devices/") Browsers and devices
       +cover('pictures/support.jpg')
+      div.next
+        +cover('pictures/support_v5.jpg')
     +slide({header: "", classes: ""})
       h2.ask Тестируй код кроссбраузерно
-      a.copyright(href="https://neesoglasnaja.github.io/moscowcss_11/") Тестирование фронтенда для разработчиков
+      a.copyright(href="https://youtu.be/PivJXnddkIY") Тестирование фронтенда, или Как не быть ленивым кодером
       div.hashtag #justdoit
     +slide({header: "", classes: ""})
       h2.ask(style="width: 80%") Хочу&nbsp;___&nbsp;от&nbsp;Bootstrap. Как&nbsp;правильно?
@@ -367,7 +382,7 @@ html(lang='ru')
         li.next Ограничены областью видимости DOM элемента
         li.next Наследуются вложенными элементами от родителя
         li.next Возможность делать fallback
-        li.next Отличная поддержка в 2019 году
+        li.next Отличная поддержка браузерами
       a.copyright(href="https://wsd.events/2016/10/29/pres/custom-properties") Пользовательские свойства как основа архитектуры CSS, Павел Ловцевич
     +slide({header: "", classes: ""})
       a.copyright(href="https://caniuse.com/#feat=css-variables") https://caniuse.com/#feat=css-variables
@@ -491,7 +506,7 @@ html(lang='ru')
         li.next Не переставай учиться
     +slide({name: 'theend', header: "", classes: ''})
       p.end-link(style="position: absolute; bottom: 5%; color: #fff")
-        a.bigger(href="http://bit.ly/lvivcss-ymnnb" target="_blank" style="color:white") bit.ly/lvivcss-ymnnb
+        a.bigger(href="http://bit.ly/IWD-bootstrap" target="_blank" style="color:white") bit.ly/IWD-bootstrap
         br
         | Александра Шинкевич (
         a(href='https://twitter.com/neesoglasnaja' target="_blank" style="color: white") @neesoglasnaja
